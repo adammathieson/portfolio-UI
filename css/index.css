@@ -145,9 +145,10 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 72px;
-  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+  font-family: "Comfortaa", cursive;
   line-height: 1.5em;
+  color: #FF9700;
   animation: fade-in-font 3s ease-out;
 }
 @keyframes fade-in {
