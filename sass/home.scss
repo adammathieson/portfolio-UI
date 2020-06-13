@@ -9,7 +9,9 @@
 
     .banner {
         // display: none;
-        width: 600px;
+        max-width: 600px;
+        min-width: 300px;
+        width: 40%;
         height: 350px;
         background: inherit;
         position: absolute;
@@ -30,7 +32,7 @@
         bottom: 0;
         right: 0;
         background: inherit;
-        // box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
+        box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
         filter: blur(10px);
     }
     h1 {
@@ -40,31 +42,20 @@
         transform: translate(-50%, -50%);
         text-align: center;
         font-size: 72px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
+        line-height: 1.5em;
         animation: fade-in-font 3s ease-out;
     }
 
     @keyframes fade-in {
-        // from {
-        //     transform: translate3d(-700px, -500px, 0) translate(-50%, -50%) rotate(-180deg);
-        // }
-        // to {
-        //     transform: translate3d(0px,0px,0) translate(-50%, -50%) rotate(0deg)
-        // }
-        // from {
-        //     transform: scale(0) translate(-50%, -50%);
-        // }
-        // to {
-        //     transform: scale(1) translate(-50%, -50%);
-        // }
         from {
             opacity: 0;;
         }
         to {
             opacity: 1;;
-        }
-        
-    }@keyframes fade-in-font {
+        } 
+    }
+    @keyframes fade-in-font {
         
         0% {
             opacity: 0;;
@@ -75,7 +66,5 @@
         100% {
             opacity: 1;
         }
-        
     }
-
 }
