@@ -193,20 +193,27 @@ button {
   align-items: center;
 }
 .home-container .menu-right nav h2 {
-  margin-left: 4em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 4.5em;
   margin-bottom: 1.5em;
   border: 2px solid #FF9700;
   border-radius: 30px;
+  width: 110px;
+  padding: 0.2em 0.4em 0.2em;
 }
 .home-container .menu-right nav h2 a {
   text-decoration: none;
   font-size: 2rem;
   font-family: "Comfortaa", cursive;
   color: #363634;
-  padding: 0.4em;
 }
-.home-container .menu-right nav h2:first-child, .home-container .menu-right nav h2:last-child {
-  margin-left: 6em;
+.home-container .menu-right nav h2:first-child {
+  margin-left: 6.5em;
+}
+.home-container .menu-right nav h2:last-child {
+  margin-left: 5.5em;
 }
 .home-container .menu-right:before {
   content: "";

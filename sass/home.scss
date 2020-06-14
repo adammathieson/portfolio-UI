@@ -93,22 +93,31 @@
             align-items: center;
     
             h2 {
-                margin-left: 4em;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin-left: 4.5em;
                 margin-bottom: 1.5em;
                 border: 2px solid #FF9700;
                 border-radius: 30px;
+                width: 110px;
+                
+                
+                padding: .2em .4em .2em;
     
                 a {
                     text-decoration: none;
                     font-size: 2rem;
                     font-family: 'Comfortaa', cursive;
                     color: rgb(54, 54, 52);
-                    padding: .4em;
+                    // padding: .4em;
                 }
             }
-            h2:first-child, h2:last-child {
-                // display: none;
-                margin-left: 6em;
+            h2:first-child {
+                margin-left: 6.5em;
+            }
+            h2:last-child {
+                margin-left: 5.5em;
             }
         }
     }
