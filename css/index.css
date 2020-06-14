@@ -170,5 +170,24 @@ button {
     opacity: 1;
   }
 }
+.home-container .menu-right {
+  background: inherit;
+  border-radius: 50%;
+  height: inherit;
+  position: relative;
+  left: 75%;
+  overflow: hidden;
+}
+.home-container .menu-right:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: -25%;
+  border-radius: 50%;
+  position: absolute;
+  background: inherit;
+  box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
+  filter: blur(10px);
+}
 
 /*# sourceMappingURL=index.css.map */
