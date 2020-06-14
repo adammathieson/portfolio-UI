@@ -197,11 +197,11 @@ button {
   justify-content: center;
   align-content: center;
   margin-left: 4.5em;
-  margin-bottom: 1.5em;
-  border: 2px solid #FF9700;
+  margin-bottom: 2em;
+  border: 3px solid #FF9700;
   border-radius: 30px;
   width: 110px;
-  padding: 0.2em 0.4em 0.2em;
+  padding: 0.3em 0.4em 0.2em 0.4em;
 }
 .home-container .menu-right nav h2 a {
   text-decoration: none;
@@ -210,10 +210,15 @@ button {
   color: #363634;
 }
 .home-container .menu-right nav h2:first-child {
-  margin-left: 6.5em;
+  margin-left: 6.4em;
 }
 .home-container .menu-right nav h2:last-child {
-  margin-left: 5.5em;
+  margin-left: 6.4em;
+  margin-bottom: 0;
+}
+.home-container .menu-right nav h2:hover {
+  color: #f3f1ef;
+  background: #FF9700;
 }
 .home-container .menu-right:before {
   content: "";
