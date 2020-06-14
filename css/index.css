@@ -173,7 +173,7 @@ button {
 }
 .home-container .menu-right {
   background: inherit;
-  border-radius: 400px;
+  border-radius: 500px;
   height: inherit;
   position: relative;
   right: -80%;
@@ -181,9 +181,7 @@ button {
 }
 .home-container .menu-right nav {
   display: flex;
-  border: 1px solid red;
   flex-direction: column;
-  border-radius: 400px;
   top: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
@@ -192,31 +190,30 @@ button {
   justify-content: center;
   align-items: center;
 }
-.home-container .menu-right nav h2 {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-left: 4.5em;
-  margin-bottom: 2em;
-  border: 3px solid #FF9700;
-  border-radius: 30px;
-  width: 110px;
-  padding: 0.3em 0.4em 0.2em 0.4em;
-}
-.home-container .menu-right nav h2 a {
+.home-container .menu-right nav a {
   text-decoration: none;
-  font-size: 2rem;
+  text-align: center;
   font-family: "Comfortaa", cursive;
   color: #363634;
+  margin-left: 15em;
+  margin-bottom: 7em;
+  border: 2px solid #FF9700;
+  border-radius: 30px;
+  width: 110px;
+  padding: 0.5em;
 }
-.home-container .menu-right nav h2:first-child {
-  margin-left: 6.4em;
+.home-container .menu-right nav a h2 {
+  padding: 0;
+  font-size: 2rem;
 }
-.home-container .menu-right nav h2:last-child {
-  margin-left: 6.4em;
+.home-container .menu-right nav a:first-child {
+  margin-left: 20em;
+}
+.home-container .menu-right nav a:last-child {
+  margin-left: 20em;
   margin-bottom: 0;
 }
-.home-container .menu-right nav h2:hover {
+.home-container .menu-right nav a:hover {
   color: #f3f1ef;
   background: #FF9700;
 }

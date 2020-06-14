@@ -73,7 +73,7 @@
     .menu-right {
         // display: none;
         background: inherit;
-        border-radius: 400px;
+        border-radius: 500px;
         height: inherit;
         position: relative;
         right: -80%;
@@ -81,9 +81,7 @@
 
         nav {
             display: flex;
-            border: 1px solid red;
             flex-direction: column;
-            border-radius: 400px;
             top: 50%;
             transform: translate(-50%, -50%);
             position: absolute;
@@ -92,33 +90,32 @@
             justify-content: center;
             align-items: center;
     
-            h2 {
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                margin-left: 4.5em;
-                margin-bottom: 2em;
-                border: 3px solid #FF9700;
+            a {
+                text-decoration: none;
+                text-align: center;
+                font-family: 'Comfortaa', cursive;
+                color: rgb(54, 54, 52);
+                margin-left: 15em;
+                margin-bottom: 7em;
+                border: 2px solid #FF9700;
                 border-radius: 30px;
                 width: 110px;
-                padding: .3em .4em .2em .4em;
-    
-                a {
-                    text-decoration: none;
+                padding: .5em;
+
+                h2 {
+                    padding: 0;
                     font-size: 2rem;
-                    font-family: 'Comfortaa', cursive;
-                    color: rgb(54, 54, 52);
-                    // padding: .4em;
+        
                 }
             }
-            h2:first-child {
-                margin-left: 6.4em;
+            a:first-child {
+                margin-left: 20em;
             }
-            h2:last-child {
-                margin-left: 6.4em;
+            a:last-child {
+                margin-left: 20em;
                 margin-bottom: 0;
             }
-            h2:hover {
+            a:hover {
                 color: rgb(243, 241, 239);
                 background: #FF9700;
             }
