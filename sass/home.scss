@@ -6,9 +6,10 @@
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
+    overflow: hidden;
 
     .banner {
-        // display: none;
+        // display: none; 
         max-width: 600px;
         min-width: 300px;
         width: 40%;
@@ -70,12 +71,46 @@
     }
 
     .menu-right {
+        // display: none;
         background: inherit;
-        border-radius: 50%;
+        border-radius: 400px;
         height: inherit;
         position: relative;
-        left: 75%;
+        right: -80%;
         overflow: hidden;
+
+        nav {
+            display: flex;
+            border: 1px solid red;
+            flex-direction: column;
+            border-radius: 400px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+    
+            h2 {
+                margin-left: 4em;
+                margin-bottom: 1.5em;
+                border: 2px solid #FF9700;
+                border-radius: 30px;
+    
+                a {
+                    text-decoration: none;
+                    font-size: 2rem;
+                    font-family: 'Comfortaa', cursive;
+                    color: rgb(54, 54, 52);
+                    padding: .4em;
+                }
+            }
+            h2:first-child, h2:last-child {
+                // display: none;
+                margin-left: 6em;
+            }
+        }
     }
     .menu-right:before {
         content: '';
