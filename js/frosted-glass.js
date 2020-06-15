@@ -1,4 +1,8 @@
 
+export const menuOpen = () => {
+
+}
+
 export const tabsAnimation = () => {
     const tabs = document.querySelectorAll('.menu-right nav a')
     let duration = 1
