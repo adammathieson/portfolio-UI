@@ -104,7 +104,7 @@ button {
   cursor: pointer;
 }
 
-.home-container {
+.frosted-glass {
   height: 100vh;
   background-image: url("../image/beach-bench-boardwalk-clouds-462024 1.png");
   background-size: cover;
@@ -113,7 +113,7 @@ button {
   background-position: fixed;
   overflow: hidden;
 }
-.home-container .banner {
+.frosted-glass .banner {
   max-width: 600px;
   min-width: 300px;
   width: 40%;
@@ -127,7 +127,7 @@ button {
   transform: translate(-50%, -50%);
   animation: fade-in 1s ease-out;
 }
-.home-container .banner:before {
+.frosted-glass .banner:before {
   width: 650px;
   height: 400px;
   content: "";
@@ -140,7 +140,7 @@ button {
   box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
   filter: blur(10px);
 }
-.home-container h1 {
+.frosted-glass h1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -171,7 +171,7 @@ button {
     opacity: 1;
   }
 }
-.home-container .menu-right {
+.frosted-glass .menu-right {
   background: inherit;
   border-radius: 500px;
   height: inherit;
@@ -179,7 +179,7 @@ button {
   right: -80%;
   overflow: hidden;
 }
-.home-container .menu-right nav {
+.frosted-glass .menu-right nav {
   display: flex;
   flex-direction: column;
   top: 50%;
@@ -190,7 +190,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-.home-container .menu-right nav a {
+.frosted-glass .menu-right nav a {
   text-decoration: none;
   text-align: center;
   font-family: "Comfortaa", cursive;
@@ -202,22 +202,22 @@ button {
   width: 110px;
   padding: 0.5em;
 }
-.home-container .menu-right nav a h2 {
+.frosted-glass .menu-right nav a h2 {
   padding: 0;
   font-size: 2rem;
 }
-.home-container .menu-right nav a:first-child {
+.frosted-glass .menu-right nav a:first-child {
   margin-left: 20em;
 }
-.home-container .menu-right nav a:last-child {
+.frosted-glass .menu-right nav a:last-child {
   margin-left: 20em;
   margin-bottom: 0;
 }
-.home-container .menu-right nav a:hover {
+.frosted-glass .menu-right nav a:hover {
   color: #f3f1ef;
   background: #FF9700;
 }
-.home-container .menu-right:before {
+.frosted-glass .menu-right:before {
   content: "";
   height: 100%;
   width: 100%;
