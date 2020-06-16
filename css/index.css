@@ -191,7 +191,7 @@ button {
   right: -80%;
   overflow: hidden;
   transform: translateX(100%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s linear;
 }
 .frosted-glass .menu-right nav {
   display: flex;
@@ -207,7 +207,6 @@ button {
 .frosted-glass .menu-right nav a {
   text-decoration: none;
   text-align: center;
-  font-family: "Comfortaa", cursive;
   color: #363634;
   margin-left: 15em;
   margin-bottom: 7em;
@@ -218,6 +217,7 @@ button {
   opacity: 0;
 }
 .frosted-glass .menu-right nav a h2 {
+  font-family: "Comfortaa", cursive;
   padding: 0;
   font-size: 1.75rem;
 }
