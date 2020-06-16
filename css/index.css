@@ -171,6 +171,18 @@ button {
     opacity: 1;
   }
 }
+.frosted-glass .burger {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  left: 74%;
+}
+.frosted-glass .burger div {
+  background: #fff;
+  width: 30px;
+  height: 4px;
+  margin: 0.5em;
+}
 .frosted-glass .menu-right {
   background: inherit;
   border-radius: 500px;
@@ -178,7 +190,8 @@ button {
   position: relative;
   right: -80%;
   overflow: hidden;
-  animation: menu-open 1s ease-in-out;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
 }
 .frosted-glass .menu-right nav {
   display: flex;
@@ -202,10 +215,11 @@ button {
   border-radius: 30px;
   width: 110px;
   padding: 0.5em;
+  opacity: 0;
 }
 .frosted-glass .menu-right nav a h2 {
   padding: 0;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 .frosted-glass .menu-right nav a:first-child {
   margin-left: 20em;
@@ -229,11 +243,16 @@ button {
   box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
   filter: blur(10px);
 }
-@keyframes menu-open {
+.frosted-glass .menu-active {
+  transform: translateX(0%);
+}
+@keyframes tabs-fade-in {
   from {
-    transform: translateX(400px);
+    opacity: 0;
+    transform: translateX(50px);
   }
   to {
+    opacity: 1;
     transform: translateX(0px);
   }
 }
