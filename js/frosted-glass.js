@@ -4,22 +4,31 @@ const menu = document.querySelector('.menu-right')
 const tabs = document.querySelectorAll('.menu-right nav a')
 
 const tl = gsap.timeline({defaults:{duration: 1}})
+let touched = false
 
 export const menuOpen = () => {
     
 }
 
 export const arrowAnimation = () => {
-    const rotate = tl.to("#arrow", {rotate: 180})
-    
-    if (rotate.reversed()) {
-        console.log(tl.reversed())
+    tl.to("#arrow", {rotate: 180})
+    if (!touched || tl.reversed()) {
+        console.log(touched)
+        touched = true
         tl.play()
     } else {
-        // console.log(tl.reversed())
-        tl.reverse()
+            console.log('playing')
+            tl.reverse()
+        }
     }
-}
+    // if (rotate.reversed()) {
+    //     console.log(tl.reversed())
+    //     tl.play()
+    // } else {
+    //     console.log(tl.reversed())
+    //     tl.reverse()
+    // }
+
 
 arrow.addEventListener('click', arrowAnimation )
 

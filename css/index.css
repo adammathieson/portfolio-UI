@@ -175,7 +175,7 @@ button {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  transform: translate(-20%, -50%);
+  transform: translate(-50, -50%);
   left: 74%;
   width: 80px;
   height: 60px;
@@ -227,8 +227,7 @@ button {
   margin-bottom: 0;
 }
 .frosted-glass .menu-right nav a:hover {
-  color: #f3f1ef;
-  background: #FF9700;
+  filter: brightness(120%);
 }
 .frosted-glass .menu-right:before {
   content: "";

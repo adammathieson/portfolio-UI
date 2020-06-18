@@ -139,8 +139,9 @@
                 margin-bottom: 0;
             }
             a:hover {
-                color: rgb(243, 241, 239);
-                background: #FF9700;
+                // color: rgb(243, 241, 239);
+                // background: #FF9700;
+                filter: brightness(120%);
             }
         }
     }
