@@ -1,4 +1,4 @@
-.frosted-glass {
+.overlay {
     // display: none;
     height: 100vh;
     background-image: url('../image/beach-bench-boardwalk-clouds-462024\ 1.png');
@@ -123,6 +123,8 @@
                 width: 110px;
                 padding: .5em;
                 opacity: 0;
+                background: #ffbc57;
+
                 
                 h2 {
                     font-family: 'Comfortaa', cursive;
@@ -140,7 +142,7 @@
             }
             a:hover {
                 // color: rgb(243, 241, 239);
-                // background: #FF9700;
+                background: #FF9700;
                 filter: brightness(120%);
             }
         }
@@ -166,16 +168,6 @@
         }
     }
 
-    // @keyframes menu-open {
-    //     from {
-    //         transform: translateX(400px);
-    //         // opacity: 0;
-    //     }
-    //     to {
-    //         transform: translateX(0px);
-    //         // opacity: 1;
-    //     }
-    // }
     @keyframes tabs-fade-in {
         from {
             opacity: 0;

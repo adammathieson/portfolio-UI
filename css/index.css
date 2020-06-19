@@ -104,7 +104,7 @@ button {
   cursor: pointer;
 }
 
-.frosted-glass {
+.overlay {
   height: 100vh;
   background-image: url("../image/beach-bench-boardwalk-clouds-462024 1.png");
   background-size: cover;
@@ -113,7 +113,7 @@ button {
   background-position: fixed;
   overflow: hidden;
 }
-.frosted-glass .banner {
+.overlay .banner {
   max-width: 600px;
   min-width: 300px;
   width: 40%;
@@ -127,7 +127,7 @@ button {
   transform: translate(-50%, -50%);
   animation: fade-in 1s ease-out;
 }
-.frosted-glass .banner:before {
+.overlay .banner:before {
   width: 650px;
   height: 400px;
   content: "";
@@ -140,7 +140,7 @@ button {
   box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
   filter: blur(10px);
 }
-.frosted-glass h1 {
+.overlay h1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -171,7 +171,7 @@ button {
     opacity: 1;
   }
 }
-.frosted-glass #arrow {
+.overlay #arrow {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -181,7 +181,7 @@ button {
   height: 60px;
   border-radius: 50px;
 }
-.frosted-glass .menu-right {
+.overlay .menu-right {
   background: inherit;
   border-radius: 500px;
   height: inherit;
@@ -191,7 +191,7 @@ button {
   transform: translateX(20%);
   transition: transform 0.3s linear;
 }
-.frosted-glass .menu-right nav {
+.overlay .menu-right nav {
   display: flex;
   flex-direction: column;
   top: 50%;
@@ -202,7 +202,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-.frosted-glass .menu-right nav a {
+.overlay .menu-right nav a {
   text-decoration: none;
   text-align: center;
   color: #363634;
@@ -213,23 +213,25 @@ button {
   width: 110px;
   padding: 0.5em;
   opacity: 0;
+  background: #ffbc57;
 }
-.frosted-glass .menu-right nav a h2 {
+.overlay .menu-right nav a h2 {
   font-family: "Comfortaa", cursive;
   padding: 0;
   font-size: 1.75rem;
 }
-.frosted-glass .menu-right nav a:first-child {
+.overlay .menu-right nav a:first-child {
   margin-left: 20em;
 }
-.frosted-glass .menu-right nav a:last-child {
+.overlay .menu-right nav a:last-child {
   margin-left: 20em;
   margin-bottom: 0;
 }
-.frosted-glass .menu-right nav a:hover {
+.overlay .menu-right nav a:hover {
+  background: #FF9700;
   filter: brightness(120%);
 }
-.frosted-glass .menu-right:before {
+.overlay .menu-right:before {
   content: "";
   height: 100%;
   width: 100%;
@@ -240,7 +242,7 @@ button {
   box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
   filter: blur(10px);
 }
-.frosted-glass .menu-active {
+.overlay .menu-active {
   transform: translateX(0%);
 }
 @keyframes tabs-fade-in {
