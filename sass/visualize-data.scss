@@ -1,0 +1,17 @@
+.visualize-data {
+    height: 100vh;
+    background-image: url(../image/visualize_data/vis_data_bg.svg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    overflow: hidden;
+
+    .posts-container {
+        // display: none;
+        border: 1px solid red;
+        width: 33%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
