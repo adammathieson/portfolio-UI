@@ -1,4 +1,5 @@
 .visualize-data {
+    display: flex;
     height: 100vh;
     background-image: url(../image/visualize_data/vis_data_bg.svg);
     background-size: cover;
@@ -9,9 +10,43 @@
 
     .posts-container {
         // display: none;
+        padding: 3em;
+        height: inherit;
         border: 1px solid red;
-        width: 33%;
+        width: 40%;
         display: flex;
         justify-content: space-between;
+
+        #post-1 {
+
+        }
+        #post-2 {
+            align-self: center;
+        }
+        #post-3 {
+            align-self: flex-end;
+        }
     }
+    .text-display {
+        // width: 60%;
+        border: 2px solid orange;
+
+        // #temp {
+        //     width: 50%;
+        // }
+
+        #text-1 {
+            border: 1px solid blue;
+            width: 100%;
+            // height: auto;
+            // stroke: red;
+            // fill: red;
+        }
+        #text-2 {
+            // max-width: 50%;
+            // width: 100%;
+
+        }
+    }
+
 }
