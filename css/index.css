@@ -129,10 +129,9 @@ button {
   align-self: flex-end;
 }
 .visualize-data .text-display {
-  border: 2px solid orange;
+  width: 60%;
 }
 .visualize-data .text-display #text-1 {
-  border: 1px solid blue;
   width: 100%;
 }
 .overlay {
