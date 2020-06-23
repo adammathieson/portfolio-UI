@@ -74,9 +74,6 @@
 }
 
 .visualize-data .spheres-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 60%;
   position: absolute;
   -webkit-box-pack: center;

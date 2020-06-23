@@ -57,7 +57,7 @@
     }
 
     .spheres-container { 
-        display: flex;
+        // display: flex;
         width: 60%;
         position: absolute;
         justify-content: center;
@@ -69,6 +69,8 @@
 
         .sphere {
             width: 25%;
+            // display: relative;
+
         }
     }
 
