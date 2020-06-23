@@ -9,45 +9,38 @@
     overflow: hidden;
 
     .posts-container {
-        // display: none;
-        padding: 3em;
+        display: none;
+        padding: 2em 0 2em 3em;
         height: inherit;
-        border: 1px solid red;
-        width: 40%;
+        // border: 1px solid red;
+        width: 38%;
         display: flex;
         justify-content: space-between;
-
-        #post-1 {
-
+        
+        .post {
+            height: 60%;
+            vertical-align: middle;
+            padding-right: 1em;
         }
-        #post-2 {
+        .post:nth-child(2) {
             align-self: center;
         }
-        #post-3 {
+        .post:last-child {
             align-self: flex-end;
+
         }
     }
-    .text-display {
+    .text-container {
         display: flex;
         flex-direction: column;
         flex: 1 0 auto;
         justify-content: center;
-
         height: 60%;
         width: 60%;
         padding: 2em;
-        // height: 0;
-        // position: relative;
-        border: 2px solid orange;
-
-        // .text {
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        // }
+        // border: 2px solid orange;
 
         .text {
-            // padding-top: 10em;
             width: 100%;;
 
         }
@@ -60,28 +53,22 @@
             padding-right: 3em;
             // width: 100%;
             // transform: scale(1);
-
-            path {
-                // transition: all 1s;
-                // stroke-dasharray: 1, 20; 
-                // stroke-dashoffset: -13;
-
-            }
-
-            // border: 1px solid blue;
-            // background-color: red;
-            // width: 100%;
-            // height: auto;
-            // stroke: red;
-            // fill: red;
-        //     #temp {
-        //     border: 1px solid #fff;
-        // }
         }
-        #text-2 {
-            // max-width: 50%;
-            // width: 100%;
+    }
 
+    .spheres-container { 
+        display: flex;
+        width: 60%;
+        position: absolute;
+        justify-content: center;
+        bottom: 10%;
+        right: 0;
+        padding: 0 5em 7em 0;
+
+        border: 1px solid red;
+
+        .sphere {
+            width: 25%;
         }
     }
 

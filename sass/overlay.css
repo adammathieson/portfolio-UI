@@ -1,0 +1,227 @@
+.overlay {
+  height: 100vh;
+  background-image: url("../image/beach-bench-boardwalk-clouds-462024 1.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  overflow: hidden;
+}
+
+.overlay .banner {
+  max-width: 600px;
+  min-width: 300px;
+  width: 40%;
+  height: 350px;
+  background: inherit;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: fade-in 1s ease-out;
+          animation: fade-in 1s ease-out;
+}
+
+.overlay .banner:before {
+  width: 650px;
+  height: 400px;
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  bottom: 0;
+  right: 0;
+  background: inherit;
+  -webkit-box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.overlay h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Comfortaa', cursive;
+  line-height: 1.5em;
+  color: #FF9700;
+  -webkit-animation: fade-in-font 3s ease-out;
+          animation: fade-in-font 3s ease-out;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in-font {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-font {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.overlay #arrow {
+  cursor: pointer;
+  position: relative;
+  left: 74%;
+  width: 80px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.overlay .menu-right {
+  background: inherit;
+  border-radius: 500px;
+  height: 100%;
+  position: relative;
+  top: 0px;
+  right: -80%;
+  overflow: hidden;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+.overlay .menu-right nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay .menu-right nav a {
+  text-decoration: none;
+  text-align: center;
+  color: #363634;
+  margin-left: 15em;
+  margin-bottom: 7em;
+  border: 2px solid #FF9700;
+  border-radius: 30px;
+  width: 110px;
+  padding: .5em;
+  opacity: 0;
+  background: #ffbc57;
+}
+
+.overlay .menu-right nav a h2 {
+  font-family: 'Comfortaa', cursive;
+  padding: 0;
+  font-size: 1.75rem;
+}
+
+.overlay .menu-right nav a:first-child {
+  margin-left: 20em;
+}
+
+.overlay .menu-right nav a:last-child {
+  margin-left: 20em;
+  margin-bottom: 0;
+}
+
+.overlay .menu-right nav a:hover {
+  background: #FF9700;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.overlay .menu-right:before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  left: -25%;
+  border-radius: 50%;
+  position: absolute;
+  background: inherit;
+  -webkit-box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.overlay .menu-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes tabs-fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes tabs-fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+/*# sourceMappingURL=overlay.css.map */
