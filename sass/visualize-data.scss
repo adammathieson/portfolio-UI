@@ -28,11 +28,17 @@
         }
     }
     .text-display {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+        justify-content: center;
+
+        height: 60%;
         width: 60%;
         padding: 2em;
         // height: 0;
         // position: relative;
-        // border: 2px solid orange;
+        border: 2px solid orange;
 
         // .text {
         //     position: absolute;
@@ -40,8 +46,19 @@
         //     left: 0;
         // }
 
+        .text {
+            // padding-top: 10em;
+            width: 100%;;
+
+        }
+        .text:first-child {
+            padding-left: 3em;
+        }
+
         .text:last-child {
             padding-top: 3em;
+            padding-right: 3em;
+            // width: 100%;
             // transform: scale(1);
 
             path {

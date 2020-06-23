@@ -129,11 +129,24 @@ button {
   align-self: flex-end;
 }
 .visualize-data .text-display {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  justify-content: center;
+  height: 60%;
   width: 60%;
   padding: 2em;
+  border: 2px solid orange;
+}
+.visualize-data .text-display .text {
+  width: 100%;
+}
+.visualize-data .text-display .text:first-child {
+  padding-left: 3em;
 }
 .visualize-data .text-display .text:last-child {
   padding-top: 3em;
+  padding-right: 3em;
 }
 .overlay {
   height: 100vh;
