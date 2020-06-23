@@ -29,14 +29,23 @@
     }
     .text-display {
         width: 60%;
+        padding: 2em;
+        // height: 0;
+        // position: relative;
         // border: 2px solid orange;
 
-        
+        // .text {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        // }
 
-        #text-1 {
+        .text:last-child {
+            padding-top: 3em;
+            // transform: translateX(50px); 
             // border: 1px solid blue;
             // background-color: red;
-            width: 100%;
+            // width: 100%;
             // height: auto;
             // stroke: red;
             // fill: red;

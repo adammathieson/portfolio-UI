@@ -130,9 +130,10 @@ button {
 }
 .visualize-data .text-display {
   width: 60%;
+  padding: 2em;
 }
-.visualize-data .text-display #text-1 {
-  width: 100%;
+.visualize-data .text-display .text:last-child {
+  padding-top: 3em;
 }
 .overlay {
   height: 100vh;
