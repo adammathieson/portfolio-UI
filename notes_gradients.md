@@ -1,23 +1,22 @@
+
+[Nadieh Bremer: SVG Beyond Mere Shapes](https://www.youtube.com/watch?v=U5Pf182BErk)
+
 ## Look for trends
-`const defs = svg.append("defs")
+
+`const defs = svg.append("defs")`
+
+
+`const linearGradient = defs.append('linearGradient').attr("id", "linearGradient")`
 
 ```
 {
-const linearGradient = defs.append('linearGradient')
-    .attr("id", "linearGradient")
-}
-```
-
-```
-{
-   linearGradient
-    attr("x1", "0%")
+    linearGradient
+    attr("x1", "0%")s
     .attr("y1", "0%")
     .attr("x2", "100%")
     .attr("y1", "100%") 
 }
 ```
-    
 
 ##set the color for the start
 
