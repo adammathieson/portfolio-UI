@@ -2,10 +2,10 @@
     // display: none;
     height: 100vh;
     background-image: url('../image/beach-bench-boardwalk-clouds-462024\ 1.png');
-    background-size: cover;
+    background-size: cover;;
     -webkit-background-size: cover;
     background-repeat: no-repeat;
-    background-position: fixed;
+    background-position: center;
     overflow: hidden;
 
     .banner {
@@ -69,24 +69,20 @@
             opacity: 1;
         }
     }
-    #arrow {
+
+    .arrow-container {
         cursor: pointer;
         position: relative;
         // top: 50vh;
         // transform: translate(-50, -50%);
-        left: 74%;
-        width: 80px;
-        height: 60px;
+        left: 75%;
+        max-width: 100px;
+        // height: 60px;
         border-radius: 50px;
 
-    }
+        // border: 1px solid green;
 
-    // .burger div {
-    //     background: #fff;
-    //     width: 30px;
-    //     height: 4px;
-    //     margin: .5em;
-    // }
+    }
 
     .menu-right {
         // display: none;
@@ -95,10 +91,10 @@
         height: 100%;
         position: relative;
         // z-index: 2;
-        top: 0px;
+        top: -452px;
         right: -80%;
         overflow: hidden;
-        transform: translateX(20%);
+        // transform: translateX(20%);
         transition: transform 0.3s linear;
         
 
