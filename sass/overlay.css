@@ -101,7 +101,7 @@
 .overlay .arrow-container {
   cursor: pointer;
   position: relative;
-  left: 74%;
+  left: 75%;
   max-width: 100px;
   border-radius: 50px;
 }
@@ -111,11 +111,9 @@
   border-radius: 500px;
   height: 100%;
   position: relative;
-  top: 0px;
+  top: -452px;
   right: -80%;
   overflow: hidden;
-  -webkit-transform: translateX(20%);
-          transform: translateX(20%);
   -webkit-transition: -webkit-transform 0.3s linear;
   transition: -webkit-transform 0.3s linear;
   transition: transform 0.3s linear;

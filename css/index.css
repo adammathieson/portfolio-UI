@@ -235,7 +235,7 @@ button {
 .overlay .arrow-container {
   cursor: pointer;
   position: relative;
-  left: 74%;
+  left: 75%;
   max-width: 100px;
   border-radius: 50px;
 }
@@ -244,10 +244,9 @@ button {
   border-radius: 500px;
   height: 100%;
   position: relative;
-  top: 0px;
+  top: -452px;
   right: -80%;
   overflow: hidden;
-  transform: translateX(20%);
   transition: transform 0.3s linear;
 }
 .overlay .menu-right nav {
