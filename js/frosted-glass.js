@@ -1,5 +1,5 @@
 
-const arrow = document.querySelector('#arrow')
+const arrow = document.querySelector('.arrow-container')
 const menu = document.querySelector('.menu-right')
 const tabs = document.querySelectorAll('.menu-right nav a')
 
@@ -11,7 +11,7 @@ export const menuOpen = () => {
 }
 
 export const arrowAnimation = () => {
-    tl.to("#arrow", {rotate: 180})
+    tl.to(".arrow-container", {rotate: 180})
     if (!touched || tl.reversed()) {
         console.log(touched)
         touched = true

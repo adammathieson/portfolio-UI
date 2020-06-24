@@ -171,7 +171,7 @@ button {
   background-size: cover;
   -webkit-background-size: cover;
   background-repeat: no-repeat;
-  background-position: fixed;
+  background-position: center;
   overflow: hidden;
 }
 .overlay .banner {
@@ -232,12 +232,11 @@ button {
     opacity: 1;
   }
 }
-.overlay #arrow {
+.overlay .arrow-container {
   cursor: pointer;
   position: relative;
   left: 74%;
-  width: 80px;
-  height: 60px;
+  max-width: 100px;
   border-radius: 50px;
 }
 .overlay .menu-right {
