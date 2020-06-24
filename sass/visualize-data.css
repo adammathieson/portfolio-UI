@@ -73,19 +73,20 @@
   padding-right: 3em;
 }
 
-.visualize-data .spheres-container {
+.visualize-data .circle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 60%;
+  height: 40%;
   position: absolute;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  bottom: 10%;
+  bottom: 0;
   right: 0;
   padding: 0 5em 7em 0;
-  border: 1px solid red;
 }
 
-.visualize-data .spheres-container .sphere {
-  width: 25%;
+.visualize-data .circle-container .circle-box {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=visualize-data.css.map */

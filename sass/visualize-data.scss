@@ -56,20 +56,30 @@
         }
     }
 
-    .spheres-container { 
-        // display: flex;
+    .circle-container { 
+        display: flex;
         width: 60%;
+        height: 40%;
         position: absolute;
-        justify-content: center;
-        bottom: 10%;
+        // justify-content: center;
+        bottom: 0;
         right: 0;
         padding: 0 5em 7em 0;
 
-        border: 1px solid red;
+        // border: 1px solid red;
 
-        .sphere {
-            width: 25%;
+        .circle-box {
+            width: 100%;
+            // border: 1px solid black;
+            height: 100%;
             // display: relative;
+
+            .circle  {
+                // r: 100;
+                // width: 100%;
+                // display: none;
+                
+            }
 
         }
     }
