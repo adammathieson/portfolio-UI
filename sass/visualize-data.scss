@@ -1,20 +1,19 @@
 .visualize-data {
-    display: flex;
-    height: 100vh;
+    // display: flex;
+    // height: 100vh;
     background-image: url(../image/visualize_data/vis_data_bg.svg);
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    overflow: hidden;
+    // background-size: cover;
+    // -webkit-background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: fixed;
+    // overflow: hidden;
 
     .posts-container {
-        display: none;
+        display: flex;
         padding: 2em 0 2em 3em;
         height: inherit;
         // border: 1px solid red;
         width: 38%;
-        display: flex;
         justify-content: space-between;
         
         .post {

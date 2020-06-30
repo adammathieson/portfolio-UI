@@ -71,6 +71,16 @@ body {
   margin: 0 auto;
 }
 
+section {
+  display: flex;
+  height: 100vh;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  overflow: hidden;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: sans-serif;
 }
@@ -105,21 +115,13 @@ button {
 }
 
 .visualize-data {
-  display: flex;
-  height: 100vh;
   background-image: url(../image/visualize_data/vis_data_bg.svg);
-  background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: fixed;
-  overflow: hidden;
 }
 .visualize-data .posts-container {
-  display: none;
+  display: flex;
   padding: 2em 0 2em 3em;
   height: inherit;
   width: 38%;
-  display: flex;
   justify-content: space-between;
 }
 .visualize-data .posts-container .post {
