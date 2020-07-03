@@ -319,5 +319,8 @@ button {
 .forms {
   background-color: #f79a9a;
 }
+.forms #weasel-w-face {
+  display: none;
+}
 
 /*# sourceMappingURL=index.css.map */
