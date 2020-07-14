@@ -17,6 +17,16 @@
     margin: 0 auto;
     // background-image: url(../img/webb-dark/webb-dark.png);
   }
+
+  section {
+    display: flex;
+    height: 100vh;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    overflow: hidden;
+  }
   
   h1, h2, h3, h4, h5 {
     font-family: sans-serif;
