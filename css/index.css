@@ -115,12 +115,14 @@ button {
 }
 
 .visualize-data {
+  display: flex;
   background-image: url(../image/visualize_data/vis_data_bg.svg);
 }
 .visualize-data .posts-container {
   display: flex;
   padding: 2em 0 2em 3em;
   height: inherit;
+  border: 1px solid red;
   width: 38%;
   justify-content: space-between;
 }
@@ -135,37 +137,38 @@ button {
 .visualize-data .posts-container .post:last-child {
   align-self: flex-end;
 }
-.visualize-data .text-container {
+.visualize-data .side-content {
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;
-  justify-content: center;
-  height: 60%;
-  width: 60%;
-  padding: 2em;
+  align-items: center;
+  flex: 1;
+  border: 1px solid blue;
 }
-.visualize-data .text-container .text {
+.visualize-data .side-content .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 2em;
+  border: 2px solid orange;
+}
+.visualize-data .side-content .text-container .text {
   width: 100%;
 }
-.visualize-data .text-container .text:first-child {
+.visualize-data .side-content .text-container .text:first-child {
   padding-left: 3em;
 }
-.visualize-data .text-container .text:last-child {
+.visualize-data .side-content .text-container .text:last-child {
   padding-top: 3em;
   padding-right: 3em;
 }
-.visualize-data .circle-container {
+.visualize-data .side-content .circle-container {
   display: flex;
-  width: 60%;
-  height: 40%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 0 5em 7em 0;
-}
-.visualize-data .circle-container .circle-box {
   width: 100%;
-  height: 100%;
+  border: 1px solid red;
+}
+.visualize-data .side-content .circle-container #circle-box {
+  width: 100%;
 }
 .overlay {
   height: 100vh;

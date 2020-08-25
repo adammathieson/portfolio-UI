@@ -12,8 +12,9 @@ const tl_look_back = gsap.timeline({repeat: 3, repeatDelay: delay, yoyo: true})
 //     tl.to("#rEye", {r: 0, duration: .1})
 //     tl.fromTo("#nose", {rotate: -10}, {rotate: 10, duration: .1})
 
-//     tl.fromTo("#left-foot", {y: 0, rotate: 0}, {y: -1.2, rotate: -5, duration: .01, ease: 
-//         Elastic.
-//         easeOut})
+    tl.fromTo("#left-foot", {y: 0, rotate: 0}, {y: -1.2, rotate: -5, duration: .01, ease: 
+        Elastic.
+        easeOut})
 //     tl.fromTo("#right-foot", {y: 0, rotate: 0}, {y: -1.3, rotate: -5, duration: .01}, .5)
     
+lattice
