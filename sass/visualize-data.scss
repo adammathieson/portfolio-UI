@@ -1,5 +1,5 @@
 .visualize-data {
-    // display: flex;
+    display: flex;
     // height: 100vh;
     background-image: url(../image/visualize_data/vis_data_bg.svg);
     // background-size: cover;
@@ -12,7 +12,7 @@
         display: flex;
         padding: 2em 0 2em 3em;
         height: inherit;
-        // border: 1px solid red;
+        border: 1px solid red;
         width: 38%;
         justify-content: space-between;
         
@@ -29,58 +29,68 @@
 
         }
     }
-    .text-container {
+
+    .side-content {
         display: flex;
         flex-direction: column;
-        flex: 1 0 auto;
-        justify-content: center;
-        height: 60%;
-        width: 60%;
-        padding: 2em;
-        // border: 2px solid orange;
+        align-items: center;
+        flex: 1;
+        border: 1px solid blue;
 
-        .text {
-            width: 100%;;
-
-        }
-        .text:first-child {
-            padding-left: 3em;
-        }
-
-        .text:last-child {
-            padding-top: 3em;
-            padding-right: 3em;
-            // width: 100%;
-            // transform: scale(1);
-        }
-    }
-
-    .circle-container { 
-        display: flex;
-        width: 60%;
-        height: 40%;
-        position: absolute;
-        // justify-content: center;
-        bottom: 0;
-        right: 0;
-        padding: 0 5em 7em 0;
-
-        // border: 1px solid red;
-
-        .circle-box {
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            // flex: 1 0 auto;
+            justify-content: center;
+            // height: 60%;
             width: 100%;
-            // border: 1px solid black;
-            height: 100%;
-            // display: relative;
-
-            .circle  {
-                // r: 100;
-                // width: 100%;
-                // display: none;
-                
+            padding: 2em;
+            border: 2px solid orange;
+    
+            .text {
+                width: 100%;;
+    
             }
-
+            .text:first-child {
+                padding-left: 3em;
+            }
+    
+            .text:last-child {
+                padding-top: 3em;
+                padding-right: 3em;
+                // width: 100%;
+                // transform: scale(1);
+            }
         }
+    
+        .circle-container { 
+            display: flex;
+            width: 100%;
+            // height: 40%;
+            // position: relative;
+            // justify-content: center;
+            // bottom: 0;
+            // right: 0;
+            // padding: 0 5em 7em 0;
+    
+            border: 1px solid red;
+    
+            #circle-box {
+                width: 100%;
+                // border: 1px solid black;
+                // height: 100%;
+                // display: relative;
+    
+                .circle  {
+                    // width: 33%;
+                    // display: none;
+                    
+                }
+    
+            }
+        }
+
     }
+    
 
 }
