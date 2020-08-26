@@ -1,7 +1,9 @@
 .landing-container {
+    // height: auto;
+    max-width: 1500px;
     
     svg {
-        width: 100vw;
+        width: 100%;
         height: auto;
     }
 }
