@@ -114,6 +114,15 @@ button {
   cursor: pointer;
 }
 
+.landing-container svg {
+  width: 100vw;
+  height: auto;
+}
+
+#W, #e2, #b, #D, #e3, #v, #e4, #l, #o2, #p, #e5, #r, #landing-bg-curve {
+  visibility: hidden;
+}
+
 .visualize-data {
   display: flex;
   background-image: url(../image/visualize_data/vis_data_bg.svg);
