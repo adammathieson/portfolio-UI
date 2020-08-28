@@ -63,16 +63,18 @@ html {
 html, body {
   font-family: "Roboto", sans-serif;
   color: rgba(253, 250, 250, 0.993);
-  background-color: rgba(27, 25, 25, 0.993);
+  scroll-behavior: smooth;
 }
 
 body {
   max-width: 1440px;
   margin: 0 auto;
+  background-color: rgba(61, 58, 58, 0.993);
 }
 
 section {
   display: flex;
+  margin: 0 0 20em 0;
   height: 100vh;
   background-size: cover;
   -webkit-background-size: cover;
@@ -114,6 +116,20 @@ button {
   cursor: pointer;
 }
 
+.navbar {
+  width: 72%;
+  position: absolute;
+  z-index: 1;
+  margin: 1% auto;
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 3em 0;
+}
+.navbar nav a div {
+  padding: 2em;
+}
 .landing-container {
   display: flex;
   flex-direction: column;

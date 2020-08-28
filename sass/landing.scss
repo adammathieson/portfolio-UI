@@ -1,3 +1,35 @@
+
+.navbar {
+    // border: 1px solid whi te;
+    width: 72%;
+    position: absolute;
+    z-index: 1;
+    margin: 1% auto;
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 3em 0;
+
+        a div {
+        // border: 1px solid #E1DCC1;
+        // border-radius: 50px;
+        // max-width: 80px;
+        // height: 20px;
+        padding: 2em;
+
+
+        svg {
+            // width: 100%;
+        }
+
+    }
+    }
+
+    
+    
+}
+
 .landing-container {
     display: flex;
     flex-direction: column;

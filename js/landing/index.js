@@ -23,9 +23,9 @@ tl.add({
     targets: "#adam",
     translateY: [50, 0],
     opacity: 1,
-    duration: 1500,
+    duration: 2000,
     delay: 1000,
-    easing: 'easeInOutQuint',
+    easing: 'easeOutQuad',
 })
 
 // last name drop down
@@ -33,9 +33,9 @@ tl.add({
     targets: "#mathieson",
     translateY: [-50, 0],
     opacity: 1,
-    duration: 1500,
-    easing: 'easeInOutQuint',
-}, '-=1500')
+    duration: 2000,
+    easing: 'easeOutQuad',
+}, '-=2000')
 
 // Page transition ----> reveals img
 .add({
@@ -47,28 +47,28 @@ tl.add({
     direction: 'alternate',
     duration: 2000,
     loop: true,
-}, '-=1500')
+}, '-=2000')
 
 // fade out first and last name
 .add({
     targets: [ ...adamChars, ...mathiesonChars ],
     opacity: 0,
     easing: 'linear',
-    duration: 2000,
+    duration: 700,
     direction: 'alternate',
     stagger: 100,
-    delay: anime.stagger(300),
+    delay: anime.stagger(250),
     loop: true,
-})
+}, '+=1000')
 
 // fade in title
 .add({
     targets: [ ...webChars, ...developerChars],
     opacity: 1,
     easing: 'linear',
-    duration: 2000,
+    duration: 700,
     direction: 'alternate',
     stagger: 100,
-    delay: anime.stagger(300),
+    delay: anime.stagger(250),
     loop: true,
-}, '-=4000')
+}, '-=3000')
