@@ -10,8 +10,23 @@ var adam = document.querySelector('#adam')
 // console.log(mathiesonChars)
 // console.log(webChars)
 // console.log(developerChars)
+var firstNamePopUp = anime({
+    targets: "#adam",
+    translateY: [50, 0],
+    opacity: [0, 1],
+    duration: 1500,
+    easing: 'easeInOutQuint',
+})
 
-var adamMorph = anime({
+var lastNamePopDown = anime({
+    targets: "#mathieson",
+    translateY: [-50, 0],
+    opacity: [0, 1],
+    duration: 1500,
+    easing: 'easeInOutQuint',
+})
+
+var nameMorph = anime({
     targets: [ ...adamChars, ...mathiesonChars ],
     opacity: 0,
     easing: 'linear',
@@ -23,7 +38,7 @@ var adamMorph = anime({
     autoplay: false,
 })
 
-var webMorph = anime({
+var titleMorph = anime({
     targets: [ ...webChars, ...developerChars],
     opacity: 1,
     easing: 'linear',
@@ -34,11 +49,6 @@ var webMorph = anime({
     loop: true,
     autoplay: false,
 })
-
-
-
-
-
 
 // Page transition ----> reveals img
 var curvedBg = "M0 0H1086.91C1086.91 0 1261.61 178.138 907.481 530.245C627.731 808.399 775.72 1000 775.72 1000H0V0Z"
@@ -53,6 +63,7 @@ var landingMorph = anime({
     duration: 5000,
     loop: true,
     delay: 1000,
+    // autoplay: false,
 });
     console.log(landingMorph)
 
