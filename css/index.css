@@ -115,15 +115,21 @@ button {
 }
 
 .landing-container {
+  display: flex;
+  flex-direction: column;
   max-width: 1500px;
 }
 .landing-container svg {
   width: 100%;
   height: auto;
 }
+.landing-container .bottom-bg {
+  flex: 1;
+  background: linear-gradient(293.97deg, #24D0BF 0%, #8B2DC3 100%);
+}
 
 #W, #e2, #b, #D, #e3, #v, #e4, #l, #o2, #p, #e5, #r, #landing-bg-curve {
-  visibility: hidden;
+  opacity: 0;
 }
 
 .visualize-data {

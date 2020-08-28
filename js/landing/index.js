@@ -4,20 +4,35 @@ var mathiesonChars = document.querySelectorAll('#mathieson path')
 var webChars = document.querySelectorAll('#web path')
 var developerChars = document.querySelectorAll('#developer path')
 
-// var fullBg = document.querySelector("#")
-console.log(adamChars)
-console.log(mathiesonChars)
-console.log(webChars)
-console.log(developerChars)
+var adam = document.querySelector('#adam')
 
-var nameMorph = anime({
-    targets: adamChars,
-    scaleX: 0,
+// console.log(adamChars)
+// console.log(mathiesonChars)
+// console.log(webChars)
+// console.log(developerChars)
+
+var adamMorph = anime({
+    targets: [ ...adamChars, ...mathiesonChars ],
+    opacity: 0,
     easing: 'linear',
-    duration: 1000,
+    duration: 2000,
+    direction: 'alternate',
     stagger: 100,
-    delay: anime.stagger(1000),
-    transformOrigin: "13% 0%"
+    delay: anime.stagger(300),
+    loop: true,
+    autoplay: false,
+})
+
+var webMorph = anime({
+    targets: [ ...webChars, ...developerChars],
+    opacity: 1,
+    easing: 'linear',
+    duration: 2000,
+    direction: 'alternate',
+    stagger: 100,
+    delay: anime.stagger(300),
+    loop: true,
+    autoplay: false,
 })
 
 
