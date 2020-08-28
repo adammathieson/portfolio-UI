@@ -6,27 +6,51 @@ var developerChars = document.querySelectorAll('#developer path')
 
 var adam = document.querySelector('#adam')
 
+var curvedBg = "M0 0H1086.91C1086.91 0 1261.61 178.138 907.481 530.245C627.731 808.399 775.72 1000 775.72 1000H0V0Z"
+
 // console.log(adamChars)
 // console.log(mathiesonChars)
 // console.log(webChars)
 // console.log(developerChars)
-var firstNamePopUp = anime({
+
+// Main landing timeline
+var tl = anime.timeline({
+    duration: 3000,
+})
+
+// first name pop up
+tl.add({
     targets: "#adam",
     translateY: [50, 0],
-    opacity: [0, 1],
+    opacity: 1,
     duration: 1500,
+    delay: 1000,
     easing: 'easeInOutQuint',
 })
 
-var lastNamePopDown = anime({
+// last name drop down
+.add({
     targets: "#mathieson",
     translateY: [-50, 0],
-    opacity: [0, 1],
+    opacity: 1,
     duration: 1500,
     easing: 'easeInOutQuint',
-})
+}, '-=1500')
 
-var nameMorph = anime({
+// Page transition ----> reveals img
+.add({
+    targets: '#landing-bg-full',
+    d: [
+        { value: curvedBg
+        }],
+    easing: 'easeOutQuad',
+    direction: 'alternate',
+    duration: 2000,
+    loop: true,
+}, '-=1500')
+
+// fade out first and last name
+.add({
     targets: [ ...adamChars, ...mathiesonChars ],
     opacity: 0,
     easing: 'linear',
@@ -35,10 +59,10 @@ var nameMorph = anime({
     stagger: 100,
     delay: anime.stagger(300),
     loop: true,
-    autoplay: false,
 })
 
-var titleMorph = anime({
+// fade in title
+.add({
     targets: [ ...webChars, ...developerChars],
     opacity: 1,
     easing: 'linear',
@@ -47,34 +71,4 @@ var titleMorph = anime({
     stagger: 100,
     delay: anime.stagger(300),
     loop: true,
-    autoplay: false,
-})
-
-// Page transition ----> reveals img
-var curvedBg = "M0 0H1086.91C1086.91 0 1261.61 178.138 907.481 530.245C627.731 808.399 775.72 1000 775.72 1000H0V0Z"
-
-var landingMorph = anime({
-    targets: '.landing-bg',
-    d: [
-        { value: curvedBg
-        }],
-    easing: 'easeOutQuad',
-    direction: 'alternate',
-    duration: 5000,
-    loop: true,
-    delay: 1000,
-    // autoplay: false,
-});
-    console.log(landingMorph)
-
-    //   var tl = anime.timeline({
-    //     easing: 'easeOutExpo',
-    //     duration: 750
-    //   });
-    
-    //   // Add children
-    //   tl
-    //   .add({
-        //     targets: '.basic-timeline-demo .el.triangle',
-        
-        //   });
+}, '-=4000')
