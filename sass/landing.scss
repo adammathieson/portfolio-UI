@@ -12,18 +12,18 @@
         padding: 3em 0;
 
         a div {
-        // border: 1px solid #E1DCC1;
-        // border-radius: 50px;
-        // max-width: 80px;
-        // height: 20px;
-        padding: 2em;
+            // border: 1px solid #E1DCC1;
+            // border-radius: 50px;
+            // max-width: 80px;
+            // height: 20px;
+            padding: 2em;
 
 
-        svg {
-            // width: 100%;
+            svg {
+                // width: 100%;
         }
 
-    }
+        }
     }
 
     
@@ -31,19 +31,25 @@
 }
 
 .landing-container {
-    display: flex;
-    flex-direction: column;
+    background-image: url(../image/landing/headshot.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    // display: flex;
+    // flex-direction: column;
     max-width: 1500px;
+    min-height: 450px;
+    width: 100%;
     
     svg {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
-    .bottom-bg {
-        flex: 1;
-        background: linear-gradient(293.97deg, #24D0BF 0%, #8B2DC3 100%);
-    }
+    // .bottom-bg {
+    //     flex: 1;
+    //     background: linear-gradient(293.97deg, #24D0BF 0%, #8B2DC3 100%);
+    // }
 }
 
 #W, #e2, #b, #D, #e3, #v, #e4, #l, #o2, #p, #e5, #r, #landing-bg-curve, #adam, #mathieson {
