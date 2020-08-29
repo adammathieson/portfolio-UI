@@ -58,16 +58,15 @@ table {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 html, body {
   font-family: "Roboto", sans-serif;
   color: rgba(253, 250, 250, 0.993);
-  scroll-behavior: smooth;
 }
 
 body {
-  max-width: 1440px;
   margin: 0 auto;
   background-color: rgba(61, 58, 58, 0.993);
 }
@@ -117,7 +116,7 @@ button {
 }
 
 .navbar {
-  width: 72%;
+  width: 77%;
   position: absolute;
   z-index: 1;
   margin: 1% auto;
@@ -127,9 +126,19 @@ button {
   justify-content: space-around;
   padding: 3em 0;
 }
-.navbar nav a div {
-  padding: 2em;
+.navbar nav a {
+  text-decoration: none;
+  color: #E1DCC1;
+  border: 1px solid #E1DCC1;
+  border-radius: 50px;
+  padding: 1em 2em;
+  font-size: 1.2rem;
 }
+.navbar nav a:hover {
+  background: #E1DCC1;
+  color: #1280a1;
+}
+
 .landing-container {
   background-image: url(../image/landing/headshot.jpg);
   background-position: right;
@@ -138,6 +147,12 @@ button {
   max-width: 1500px;
   min-height: 450px;
   width: 100%;
+}
+@media screen and (max-width: 620px) {
+  .landing-container {
+    background-position: right bottom;
+    background-position-x: 150%;
+  }
 }
 .landing-container svg {
   width: 100%;

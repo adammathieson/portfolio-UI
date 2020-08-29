@@ -1,7 +1,7 @@
 
 .navbar {
-    // border: 1px solid whi te;
-    width: 72%;
+    // border: 1px solid white;
+    width: 77%;
     position: absolute;
     z-index: 1;
     margin: 1% auto;
@@ -11,19 +11,22 @@
         justify-content: space-around;
         padding: 3em 0;
 
-        a div {
-            // border: 1px solid #E1DCC1;
-            // border-radius: 50px;
-            // max-width: 80px;
-            // height: 20px;
-            padding: 2em;
-
-
-            svg {
-                // width: 100%;
+        a {
+            text-decoration: none;
+            color: $primary-font;
+            border: 1px solid $primary-font;
+            border-radius: 50px;
+            padding: 1em 2em;
+            font-size: 1.2rem;
         }
 
+        a:hover {
+            background: $primary-font;
+            color: rgb(18, 128, 161);
         }
+
+
+        
     }
 
     
@@ -40,6 +43,14 @@
     max-width: 1500px;
     min-height: 450px;
     width: 100%;
+
+    @media screen and (max-width: 620px) {
+        background-position: right bottom;
+        background-position-x: 150%;
+        
+        // background-size: 75%;
+        // display: none;
+    }
     
     svg {
         width: 100%;
