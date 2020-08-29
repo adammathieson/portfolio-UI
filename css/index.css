@@ -116,6 +116,38 @@ button {
   cursor: pointer;
 }
 
+.navbar {
+  width: 72%;
+  position: absolute;
+  z-index: 1;
+  margin: 1% auto;
+}
+.navbar nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 3em 0;
+}
+.navbar nav a div {
+  padding: 2em;
+}
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+}
+.landing-container svg {
+  width: 100%;
+  height: auto;
+}
+.landing-container .bottom-bg {
+  flex: 1;
+  background: linear-gradient(293.97deg, #24D0BF 0%, #8B2DC3 100%);
+}
+
+#W, #e2, #b, #D, #e3, #v, #e4, #l, #o2, #p, #e5, #r, #landing-bg-curve, #adam, #mathieson {
+  opacity: 0;
+}
+
 .visualize-data {
   display: flex;
   background-image: url(../image/visualize_data/vis_data_bg.svg);
