@@ -150,8 +150,7 @@ button {
 }
 @media screen and (max-width: 620px) {
   .landing-container {
-    background-position: right bottom;
-    background-position-x: 150%;
+    background-position: 100% 100%;
   }
 }
 .landing-container svg {
