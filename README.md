@@ -1,4 +1,4 @@
 # portfolio-UI
 
 ### run sass compiler
-sass --watch input.scss output.css
+sass --watch sass/index.scss:css/index.css
