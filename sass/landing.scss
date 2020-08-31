@@ -34,17 +34,18 @@
 }
 
 .landing-container {
-    background-image: url(../image/landing/headshot.jpg);
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: $bg-landing;
+    // background-image: url(../image/landing/headshot.jpg);
+    // background-position: right;
+    // background-size: contain;
+    // background-repeat: no-repeat;
     // display: flex;
     // flex-direction: column;
     max-width: 1500px;
     min-height: 450px;
     width: 100%;
 
-    @media screen and (max-width: 620px) {
+    @media screen and (max-width: $tablet-width) {
         background-position: 100% 100%;
         // background-position-x: 150%;
         
