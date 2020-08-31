@@ -194,6 +194,12 @@ button {
   width: 100%;
   height: 100%;
 }
+@supports (-webkit-touch-callout: none) {
+  .landing-container #landing-svg {
+    /* CSS specific to iOS devices */
+    height: 667px;
+  }
+}
 
 #W, #e2, #b, #D, #e3, #v, #e4, #l, #o2, #p, #e5, #r, #landing-bg-curve, #adam, #mathieson, .navbar nav a {
   opacity: 0;
