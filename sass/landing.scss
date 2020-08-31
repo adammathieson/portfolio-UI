@@ -56,16 +56,19 @@
         background-position: right top;
         min-height: 450px;
     }
+
+    #title-svg {
+        position: absolute;
+        z-index: 2;
+        top: 15%;
+        width: 55%;
+        padding-left: 1em;
+    }
     
-    svg {
+    #landing-svg {
         width: 100%;
         height: 100%;
     }
-
-    // .bottom-bg {
-    //     flex: 1;
-    //     background: linear-gradient(293.97deg, #24D0BF 0%, #8B2DC3 100%);
-    // }
 }
 
 #W, #e2, #b, #D, #e3, #v, #e4, #l, #o2, #p, #e5, #r, #landing-bg-curve, #adam, #mathieson, .navbar nav a {
