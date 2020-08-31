@@ -3,13 +3,15 @@ var adamChars = document.querySelectorAll('#adam path')
 var mathiesonChars = document.querySelectorAll('#mathieson path')
 var webChars = document.querySelectorAll('#web path')
 var developerChars = document.querySelectorAll('#developer path')
+var navTabs = document.querySelectorAll('.navbar nav a')
+// console.log(navTabsArray)
 
 var adam = document.querySelector('#adam')
 
 var deviceWidth = window.innerWidth
 var tabletWidth = 620
 var mobileWidth = 450
-console.log(deviceWidth)
+// console.log(deviceWidth)
 var curvedBg = "M0 0H1086.91C1086.91 0 1261.61 178.138 907.481 530.245C627.731 808.399 775.72 1000 775.72 1000H0V0Z"
 var curvedBgMobile = "M0 0H824.265C824.265 0 1228.7 207.512 824.265 540.025C485.813 818.285 1121 1000 1121 1000H0V0Z"
 
@@ -49,6 +51,15 @@ tl.add({
     loop: true,
 }, '-=2000')
 
+// fade in tabs
+.add({
+    targets: deviceWidth > mobileWidth ? [...navTabs].reverse() : [...navTabs],
+    opacity: 1,
+    easing: 'linear',
+    duration: 700,
+    delay: anime.stagger(250),
+})
+
 // fade out first and last name
 .add({
     targets: [ ...adamChars, ...mathiesonChars ],
@@ -56,7 +67,6 @@ tl.add({
     easing: 'linear',
     duration: 700,
     direction: 'alternate',
-    stagger: 100,
     delay: anime.stagger(250),
     loop: true,
 }, '+=1000')
@@ -68,7 +78,6 @@ tl.add({
     easing: 'linear',
     duration: 700,
     direction: 'alternate',
-    stagger: 100,
     delay: anime.stagger(250),
     loop: true,
 }, '-=3000')
