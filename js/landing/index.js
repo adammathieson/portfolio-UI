@@ -8,14 +8,10 @@ var adam = document.querySelector('#adam')
 
 var deviceWidth = window.innerWidth
 var tabletWidth = 620
+var mobileWidth = 450
 console.log(deviceWidth)
 var curvedBg = "M0 0H1086.91C1086.91 0 1261.61 178.138 907.481 530.245C627.731 808.399 775.72 1000 775.72 1000H0V0Z"
 var curvedBgMobile = "M0 0H824.265C824.265 0 1228.7 207.512 824.265 540.025C485.813 818.285 1121 1000 1121 1000H0V0Z"
-
-// console.log(adamChars)
-// console.log(mathiesonChars)
-// console.log(webChars)
-// console.log(developerChars)
 
 // Main landing timeline
 var tl = anime.timeline({
@@ -45,7 +41,7 @@ tl.add({
 .add({
     targets: '#landing-bg-full',
     d: [
-        { value: deviceWidth < tabletWidth ? curvedBgMobile : curvedBg
+        { value: deviceWidth < mobileWidth ? curvedBgMobile : curvedBg
         }],
     easing: 'easeOutQuad',
     direction: 'alternate',
