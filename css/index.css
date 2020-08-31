@@ -177,7 +177,18 @@ button {
   z-index: 2;
   top: 15%;
   width: 55%;
-  padding-left: 1em;
+  margin-left: 2em;
+  max-width: 632px;
+}
+@media screen and (min-width: 450px) {
+  .landing-container #title-svg {
+    top: 30%;
+  }
+}
+@media screen and (min-width: 620px) {
+  .landing-container #title-svg {
+    top: 40%;
+  }
 }
 .landing-container #landing-svg {
   width: 100%;

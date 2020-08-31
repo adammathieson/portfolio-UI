@@ -62,7 +62,15 @@
         z-index: 2;
         top: 15%;
         width: 55%;
-        padding-left: 1em;
+        margin-left: 2em;
+        max-width: 632px;
+
+        @media screen and (min-width: $mobile-width) {
+            top: 30%;
+        }
+        @media screen and (min-width: $tablet-width) {
+            top: 40%;
+        }
     }
     
     #landing-svg {
