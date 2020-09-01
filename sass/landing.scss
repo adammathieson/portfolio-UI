@@ -49,12 +49,20 @@
     background-size: contain;
     background-repeat: no-repeat;
     // max-width: 1500px;
-    min-height: 946px;
+    // min-height: 946px;
     width: 100%;
 
     @media screen and (max-width: $mobile-width) {
         background-position: right top;
+        background-size: 80%;
         min-height: 450px;
+
+        @supports (-webkit-touch-callout: none) {
+            background-size: 70%;
+            height: 100vh;
+            /* CSS specific to iOS devices */ 
+            // height: 667px;
+        }
     }
 
     #title-svg {
@@ -75,11 +83,11 @@
     
     #landing-svg {
         width: 100%;
-        height: 100%;
+        // height: 100%;
         
         @supports (-webkit-touch-callout: none) {
             /* CSS specific to iOS devices */ 
-            height: 667px;
+            // height: 700px;
         }
         
     }
