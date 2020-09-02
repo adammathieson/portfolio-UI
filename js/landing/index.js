@@ -104,7 +104,6 @@ function restartAnimation() {
     tl.restart()
 }
 
-
   // window.resize event listener
 window.addEventListener('resize', function() {
       // only run if we're not throttled

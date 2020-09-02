@@ -11,7 +11,11 @@
         right: 0;
         width: 40%;
         height: 45%;
-        margin-right: 2em;
+        margin: 0 2em 0 0;
+
+        @supports (-webkit-touch-callout: none) {
+            height: 40%;
+        }
     }
 
     nav {
@@ -23,6 +27,10 @@
             flex-direction: column;
             align-content: space-between;
             height: 70%;
+
+            @supports (-webkit-touch-callout: none) {
+                height: 0%;
+            }
         }
 
         a {
@@ -31,8 +39,20 @@
             border: 1px solid $primary-font;
             border-radius: 50px;
             padding: 1em 2em;
-            font-size: 1.2rem;
+            font-size: 2rem;
             text-align: center;
+            font-family: $tabfont;
+
+            @supports (-webkit-touch-callout: none) {
+
+                margin-bottom: 2em;
+            }
+        }
+        a:first-child {
+            @supports (-webkit-touch-callout: none) {
+
+                margin-top: 5em;
+            }
         }
 
         a:hover {
@@ -55,7 +75,7 @@
     @media screen and (max-width: $mobile-width) {
         background-position: right top;
         background-size: 80%;
-        min-height: 450px;
+        // min-height: 450px;
 
         @supports (-webkit-touch-callout: none) {
             background-size: 70%;

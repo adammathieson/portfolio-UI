@@ -128,7 +128,12 @@ button {
     right: 0;
     width: 40%;
     height: 45%;
-    margin-right: 2em;
+    margin: 0 2em 0 0;
+  }
+  @supports (-webkit-touch-callout: none) {
+    .navbar {
+      height: 40%;
+    }
   }
 }
 .navbar nav {
@@ -142,6 +147,11 @@ button {
     align-content: space-between;
     height: 70%;
   }
+  @supports (-webkit-touch-callout: none) {
+    .navbar nav {
+      height: 0%;
+    }
+  }
 }
 .navbar nav a {
   text-decoration: none;
@@ -149,8 +159,19 @@ button {
   border: 1px solid #E1DCC1;
   border-radius: 50px;
   padding: 1em 2em;
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: center;
+  font-family: "Poiret One", cursive;
+}
+@supports (-webkit-touch-callout: none) {
+  .navbar nav a {
+    margin-bottom: 2em;
+  }
+}
+@supports (-webkit-touch-callout: none) {
+  .navbar nav a:first-child {
+    margin-top: 5em;
+  }
 }
 .navbar nav a:hover {
   background: #E1DCC1;
@@ -169,7 +190,6 @@ button {
   .landing-container {
     background-position: right top;
     background-size: 80%;
-    min-height: 450px;
   }
   @supports (-webkit-touch-callout: none) {
     .landing-container {
@@ -208,211 +228,6 @@ button {
 
 #W, #e2, #b, #D, #e3, #v, #e4, #l, #o2, #p, #e5, #r, #landing-bg-curve, #adam, #mathieson, .navbar nav a {
   opacity: 0;
-}
-
-.visualize-data {
-  display: flex;
-  background-image: url(../image/visualize_data/vis_data_bg.svg);
-}
-.visualize-data .posts-container {
-  display: flex;
-  padding: 2em 0 2em 3em;
-  height: inherit;
-  border: 1px solid red;
-  width: 38%;
-  justify-content: space-between;
-}
-.visualize-data .posts-container .post {
-  height: 60%;
-  vertical-align: middle;
-  padding-right: 1em;
-}
-.visualize-data .posts-container .post:nth-child(2) {
-  align-self: center;
-}
-.visualize-data .posts-container .post:last-child {
-  align-self: flex-end;
-}
-.visualize-data .side-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  border: 1px solid blue;
-}
-.visualize-data .side-content .text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 2em;
-  border: 2px solid orange;
-}
-.visualize-data .side-content .text-container .text {
-  width: 100%;
-}
-.visualize-data .side-content .text-container .text:first-child {
-  padding-left: 3em;
-}
-.visualize-data .side-content .text-container .text:last-child {
-  padding-top: 3em;
-  padding-right: 3em;
-}
-.visualize-data .side-content .circle-container {
-  display: flex;
-  width: 100%;
-  border: 1px solid red;
-}
-.visualize-data .side-content .circle-container #circle-box {
-  width: 100%;
-}
-.overlay {
-  height: 100vh;
-  background-image: url("../image/beach-bench-boardwalk-clouds-462024 1.png");
-  background-size: cover;
-  -webkit-background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-}
-.overlay .banner {
-  max-width: 600px;
-  min-width: 300px;
-  width: 40%;
-  height: 350px;
-  background: inherit;
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: fade-in 1s ease-out;
-}
-.overlay .banner:before {
-  width: 650px;
-  height: 400px;
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: -25px;
-  bottom: 0;
-  right: 0;
-  background: inherit;
-  box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
-  filter: blur(10px);
-}
-.overlay h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 60px;
-  font-family: "Comfortaa", cursive;
-  line-height: 1.5em;
-  color: #FF9700;
-  animation: fade-in-font 3s ease-out;
-}
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade-in-font {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.overlay .arrow-container {
-  cursor: pointer;
-  position: relative;
-  left: 75%;
-  max-width: 100px;
-  border-radius: 50px;
-}
-.overlay .menu-right {
-  background: inherit;
-  border-radius: 500px;
-  height: 100%;
-  position: relative;
-  top: -452px;
-  right: -80%;
-  overflow: hidden;
-  transition: transform 0.3s linear;
-}
-.overlay .menu-right nav {
-  display: flex;
-  flex-direction: column;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-.overlay .menu-right nav a {
-  text-decoration: none;
-  text-align: center;
-  color: #363634;
-  margin-left: 15em;
-  margin-bottom: 7em;
-  border: 2px solid #FF9700;
-  border-radius: 30px;
-  width: 110px;
-  padding: 0.5em;
-  opacity: 0;
-  background: #ffbc57;
-}
-.overlay .menu-right nav a h2 {
-  font-family: "Comfortaa", cursive;
-  padding: 0;
-  font-size: 1.75rem;
-}
-.overlay .menu-right nav a:first-child {
-  margin-left: 20em;
-}
-.overlay .menu-right nav a:last-child {
-  margin-left: 20em;
-  margin-bottom: 0;
-}
-.overlay .menu-right nav a:hover {
-  background: #FF9700;
-  filter: brightness(120%);
-}
-.overlay .menu-right:before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  left: -25%;
-  border-radius: 50%;
-  position: absolute;
-  background: inherit;
-  box-shadow: inset 0 0 0 500px rgba(255, 255, 255, 0.2);
-  filter: blur(10px);
-}
-.overlay .menu-active {
-  transform: translateX(0%);
-}
-@keyframes tabs-fade-in {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
 }
 
 .forms {
