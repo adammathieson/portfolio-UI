@@ -121,6 +121,7 @@ button {
   position: absolute;
   z-index: 1;
   margin: 1% auto;
+  max-width: 500px;
 }
 @media screen and (max-width: 450px) {
   .navbar {
@@ -158,7 +159,7 @@ button {
   color: #E1DCC1;
   border: 1px solid #E1DCC1;
   border-radius: 50px;
-  padding: 1em 2em;
+  padding: 0.5em 1em;
   font-size: 2rem;
   text-align: center;
   font-family: "Poiret One", cursive;

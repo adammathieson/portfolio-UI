@@ -106,7 +106,6 @@ function restartAnimation() {
 
   // window.resize event listener
 window.addEventListener('resize', function() {
-      // only run if we're not throttled
     if (!throttled) {
       // actual callback action
         restartAnimation()
