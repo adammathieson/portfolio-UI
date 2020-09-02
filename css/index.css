@@ -171,7 +171,7 @@ button {
 }
 @supports (-webkit-touch-callout: none) {
   .navbar nav a:first-child {
-    margin-top: 5em;
+    margin-top: 10em;
   }
 }
 .navbar nav a:hover {
