@@ -1,6 +1,6 @@
 const strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})")
 const delay = Math.round(Math.random()*10)
-console.log(delay)
+// console.log(delay)
 const tl_look_back = gsap.timeline({repeat: 3, repeatDelay: delay, yoyo: true})
 
     tl_look_back.to("#east-face", {display: "none", duration: 1})

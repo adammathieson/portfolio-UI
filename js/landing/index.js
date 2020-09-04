@@ -4,14 +4,30 @@ var mathiesonChars = document.querySelectorAll('#mathieson path')
 var webChars = document.querySelectorAll('#web path')
 var developerChars = document.querySelectorAll('#developer path')
 
-var adam = document.querySelector('#adam')
-
 var curvedBg = "M0 0H1086.91C1086.91 0 1261.61 178.138 907.481 530.245C627.731 808.399 775.72 1000 775.72 1000H0V0Z"
+var curvedBgMobile = "M0 0H824.265C824.265 0 1228.7 207.512 824.265 540.025C485.813 818.285 1121 1000 1121 1000H0V0Z"
 
-// console.log(adamChars)
-// console.log(mathiesonChars)
-// console.log(webChars)
-// console.log(developerChars)
+// var adam = document.querySelector('#adam')
+
+// Nav
+var navTabs = document.querySelectorAll('.navbar nav a')
+
+// Device
+var deviceWidth = window.innerWidth
+var deviceHeight = window.innerHeight
+
+
+// Set height of transition svg, bg element
+var page = document.querySelector('#landing-svg')
+var landingBg = document.querySelector('.landing-container')
+page.setAttribute('height', String(deviceHeight))
+landingBg.setAttribute('height', String(deviceHeight))
+console.log(typeof(deviceHeight), page.getAttribute('height'))
+console.log(landingBg.getAttribute('height'))
+
+var tabletWidth = 620
+var mobileWidth = 450
+// console.log(deviceWidth)
 
 // Main landing timeline
 var tl = anime.timeline({
@@ -41,13 +57,22 @@ tl.add({
 .add({
     targets: '#landing-bg-full',
     d: [
-        { value: curvedBg
+        { value: deviceWidth < mobileWidth ? curvedBgMobile : curvedBg
         }],
     easing: 'easeOutQuad',
     direction: 'alternate',
     duration: 2000,
     loop: true,
 }, '-=2000')
+
+// fade in tabs
+.add({
+    targets: deviceWidth > mobileWidth ? [...navTabs].reverse() : [...navTabs],
+    opacity: 1,
+    easing: 'linear',
+    duration: 700,
+    delay: anime.stagger(250),
+})
 
 // fade out first and last name
 .add({
@@ -56,7 +81,6 @@ tl.add({
     easing: 'linear',
     duration: 700,
     direction: 'alternate',
-    stagger: 100,
     delay: anime.stagger(250),
     loop: true,
 }, '+=1000')
@@ -68,7 +92,28 @@ tl.add({
     easing: 'linear',
     duration: 700,
     direction: 'alternate',
-    stagger: 100,
     delay: anime.stagger(250),
     loop: true,
 }, '-=3000')
+
+// Replay animation on resize
+var delay = 500
+var throttled = false
+console.log(tl)
+function restartAnimation() {
+    tl.restart()
+}
+
+  // window.resize event listener
+window.addEventListener('resize', function() {
+    if (!throttled) {
+      // actual callback action
+        restartAnimation()
+      // we're throttled!
+        throttled = true;
+      // set a timeout to un-throttle
+        setTimeout(function() {
+            throttled = false;
+        }, delay);
+    }  
+});
