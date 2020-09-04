@@ -204,8 +204,8 @@ button {
   position: absolute;
   z-index: 2;
   top: 15%;
-  width: 55%;
-  margin-left: 2em;
+  width: 50%;
+  margin-left: 3em;
   max-width: 632px;
 }
 @media screen and (min-width: 450px) {
@@ -215,7 +215,7 @@ button {
 }
 @media screen and (min-width: 620px) {
   .landing-container #title-svg {
-    top: 40%;
+    top: 35%;
   }
 }
 .landing-container #landing-svg {
