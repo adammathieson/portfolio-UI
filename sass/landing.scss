@@ -1,51 +1,119 @@
 
 .navbar {
-    // border: 1px solid whi te;
-    width: 72%;
+    // border: 1px solid white;
+    width: 77%;
     position: absolute;
     z-index: 1;
     margin: 1% auto;
+    max-width: 500px;
+
+    @media screen and (max-width: $mobile-width) {
+        bottom: 0;
+        right: 0;
+        width: 40%;
+        height: 45%;
+        margin: 0 2em 0 0;
+
+        @supports (-webkit-touch-callout: none) {
+            height: 40%;
+        }
+    }
 
     nav {
         display: flex;
         justify-content: space-around;
         padding: 3em 0;
 
-        a div {
-        // border: 1px solid #E1DCC1;
-        // border-radius: 50px;
-        // max-width: 80px;
-        // height: 20px;
-        padding: 2em;
+        @media screen and (max-width: $mobile-width) {
+            flex-direction: column;
+            align-content: space-between;
+            height: 70%;
 
-
-        svg {
-            // width: 100%;
+            @supports (-webkit-touch-callout: none) {
+                height: 0%;
+            }
         }
 
-    }
-    }
+        a {
+            text-decoration: none;
+            color: $primary-font;
+            border: 1px solid $primary-font;
+            border-radius: 50px;
+            padding: .5em 1em;
+            font-size: 2rem;
+            text-align: center;
+            font-family: $tabfont;
 
-    
-    
+            @supports (-webkit-touch-callout: none) {
+
+                margin-bottom: 2em;
+            }
+        }
+        a:first-child {
+            @supports (-webkit-touch-callout: none) {
+
+                margin-top: 10em;
+            }
+        }
+
+        a:hover {
+            background: $primary-font;
+            color: rgb(18, 128, 161);
+        }
+    }
 }
 
 .landing-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1500px;
-    
-    svg {
-        width: 100%;
-        height: auto;
+    background-color: $bg-landing;
+    background-image: url(../image/landing/headshot.jpg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    // max-width: 1500px;
+    // min-height: 946px;
+    width: 100%;
+
+    @media screen and (max-width: $mobile-width) {
+        background-position: right top;
+        background-size: 80%;
+        // min-height: 450px;
+
+        @supports (-webkit-touch-callout: none) {
+            background-size: 70%;
+            height: 100vh;
+            /* CSS specific to iOS devices */ 
+            // height: 667px;
+        }
     }
 
-    .bottom-bg {
-        flex: 1;
-        background: linear-gradient(293.97deg, #24D0BF 0%, #8B2DC3 100%);
+    #title-svg {
+        position: absolute;
+        z-index: 2;
+        top: 15%;
+        width: 50%;
+        margin-left: 3em;
+        max-width: 632px;
+
+        @media screen and (min-width: $mobile-width) {
+            top: 30%;
+        }
+        @media screen and (min-width: $tablet-width) {
+            top: 35%;
+        }
+    }
+    
+    #landing-svg {
+        width: 100%;
+        // height: 100%;
+        
+        @supports (-webkit-touch-callout: none) {
+            /* CSS specific to iOS devices */ 
+            // height: 700px;
+        }
+        
     }
 }
 
-#W, #e2, #b, #D, #e3, #v, #e4, #l, #o2, #p, #e5, #r, #landing-bg-curve, #adam, #mathieson {
+#W, #e2, #b, #D, #e3, #v, #e4, #l, #o2, #p, #e5, #r, #landing-bg-curve, #adam, #mathieson, .navbar nav a {
     opacity: 0;
 }
