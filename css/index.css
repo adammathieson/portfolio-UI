@@ -231,6 +231,10 @@ button {
   opacity: 0;
 }
 
+.projects {
+  background-color: #BCD3DB;
+}
+
 .forms {
   background-color: #f79a9a;
 }
