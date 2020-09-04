@@ -13,17 +13,27 @@ var curvedBgMobile = "M0 0H824.265C824.265 0 1228.7 207.512 824.265 540.025C485.
 var navTabs = document.querySelectorAll('.navbar nav a')
 
 // Device
-var deviceWidth = window.innerWidth
-var deviceHeight = window.innerHeight
+let deviceWidth = window.innerWidth
+var page = document.querySelector('#landing-svg')
+var landingBg = document.querySelector('.landing-container')
 
 
 // Set height of transition svg, bg element
-var page = document.querySelector('#landing-svg')
-var landingBg = document.querySelector('.landing-container')
-page.setAttribute('height', String(deviceHeight))
-landingBg.setAttribute('height', String(deviceHeight))
-console.log(typeof(deviceHeight), page.getAttribute('height'))
-console.log(landingBg.getAttribute('height'))
+async function setElementHeight() {
+    // deviceWidth = window.innerWidth
+    // console.log(deviceHeight, deviceWidth)
+    var deviceHeight = window.innerHeight
+    page.setAttribute('height', String(deviceHeight))
+    landingBg.setAttribute('height', String(deviceHeight))
+    console.log('->>> ', landingBg.getAttribute('height'))
+    return 
+}
+setElementHeight()
+// var page = document.querySelector('#landing-svg')
+// var landingBg = document.querySelector('.landing-container')
+// page.setAttribute('height', String(deviceHeight))
+// landingBg.setAttribute('height', String(deviceHeight))
+// console.log(typeof(deviceHeight), page.getAttribute('height'))
 
 var tabletWidth = 620
 var mobileWidth = 450
@@ -99,21 +109,29 @@ tl.add({
 // Replay animation on resize
 var delay = 500
 var throttled = false
-console.log(tl)
-function restartAnimation() {
+// console.log(tl)
+async function restartAnimation() {
+    await setElementHeight()
+    // console.log(window.innerHeight)
+    // tl.reset()
     tl.restart()
 }
 
   // window.resize event listener
 window.addEventListener('resize', function() {
+    // console.log('resize')
     if (!throttled) {
       // actual callback action
+        // setElementHeight()
+        
+
         restartAnimation()
       // we're throttled!
         throttled = true;
       // set a timeout to un-throttle
         setTimeout(function() {
             throttled = false;
+            // setElementHeight()
         }, delay);
     }  
 });
