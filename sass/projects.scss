@@ -1,3 +1,29 @@
 .projects {
     background-color: $bg-projects;
+
+    .title-container {
+        // display: none;
+        width: 80%;
+        height: auto;
+        border: 1px solid red;
+
+        #title-wmp-stack {
+            visibility: hidden;
+            // display: none;
+
+            @media screen and (max-width: $mobile-width) {
+                visibility: visible;
+            }
+        }
+        #title-wmp {
+            // visibility: visible;
+            // display: none;
+
+            @media screen and (max-width: $mobile-width) {
+                visibility: hidden;
+            }
+
+        }
+        
+    }
 }

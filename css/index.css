@@ -234,6 +234,24 @@ button {
 .projects {
   background-color: #BCD3DB;
 }
+.projects .title-container {
+  width: 80%;
+  height: auto;
+  border: 1px solid red;
+}
+.projects .title-container #title-wmp-stack {
+  visibility: hidden;
+}
+@media screen and (max-width: 450px) {
+  .projects .title-container #title-wmp-stack {
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 450px) {
+  .projects .title-container #title-wmp {
+    visibility: hidden;
+  }
+}
 
 .forms {
   background-color: #f79a9a;

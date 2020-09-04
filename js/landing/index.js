@@ -19,7 +19,7 @@ var landingBg = document.querySelector('.landing-container')
 
 
 // Set height of transition svg, bg element
-async function setElementHeight() {
+function setElementHeight() {
     // deviceWidth = window.innerWidth
     // console.log(deviceHeight, deviceWidth)
     var deviceHeight = window.innerHeight
