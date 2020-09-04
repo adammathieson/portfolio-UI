@@ -2,37 +2,49 @@
     background-color: $bg-projects;
     height: 100vh;
 
-    .wmp {
+    #wmp {
+        display: flex;
+        flex-direction: column;
 
         .title-container {
             // display: none;
             width: 80%;
-            // max-height: 80px;
-            border: 1px solid red;
-    
-            #title-wmp-stack {
-                visibility: hidden;
-                // display: none;
-    
+            border: 1px solid blue;
+            margin-top: 1em;
+            // min-height: 100px;
+
+            .full-title {
                 @media screen and (max-width: $mobile-width) {
-                    visibility: visible;
+                    // height: 100%;
+                    width: 100%;
+                    display: none;
                 }
             }
-            #title-wmp {
-                // visibility: visible;
-                // display: none;
+    
+            .stack-title {
+                display: none;
     
                 @media screen and (max-width: $mobile-width) {
-                    visibility: hidden;
+                    display: block;
+                    width: 100%;
                 }
-    
             }
+            // #title-wmp {
+    
+            //     @media screen and (max-width: $mobile-width) {
+            //         visibility: hidden;
+            //     }
+    
+            // }
             
         }
 
         .image-container {
+            border: 1px solid red;
             display: flex;
+            justify-content: center;
             padding: 1em;
+            // width: 100%;
 
             img {
                 margin: 1em;

@@ -235,28 +235,37 @@ button {
   background-color: #BCD3DB;
   height: 100vh;
 }
-.projects .wmp .title-container {
-  width: 80%;
-  border: 1px solid red;
-}
-.projects .wmp .title-container #title-wmp-stack {
-  visibility: hidden;
-}
-@media screen and (max-width: 450px) {
-  .projects .wmp .title-container #title-wmp-stack {
-    visibility: visible;
-  }
-}
-@media screen and (max-width: 450px) {
-  .projects .wmp .title-container #title-wmp {
-    visibility: hidden;
-  }
-}
-.projects .wmp .image-container {
+.projects #wmp {
   display: flex;
+  flex-direction: column;
+}
+.projects #wmp .title-container {
+  width: 80%;
+  border: 1px solid blue;
+  margin-top: 1em;
+}
+@media screen and (max-width: 450px) {
+  .projects #wmp .title-container .full-title {
+    width: 100%;
+    display: none;
+  }
+}
+.projects #wmp .title-container .stack-title {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  .projects #wmp .title-container .stack-title {
+    display: block;
+    width: 100%;
+  }
+}
+.projects #wmp .image-container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
   padding: 1em;
 }
-.projects .wmp .image-container img {
+.projects #wmp .image-container img {
   margin: 1em;
   width: 30%;
 }
