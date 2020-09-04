@@ -233,24 +233,32 @@ button {
 
 .projects {
   background-color: #BCD3DB;
+  height: 100vh;
 }
-.projects .title-container {
+.projects .wmp .title-container {
   width: 80%;
-  height: auto;
   border: 1px solid red;
 }
-.projects .title-container #title-wmp-stack {
+.projects .wmp .title-container #title-wmp-stack {
   visibility: hidden;
 }
 @media screen and (max-width: 450px) {
-  .projects .title-container #title-wmp-stack {
+  .projects .wmp .title-container #title-wmp-stack {
     visibility: visible;
   }
 }
 @media screen and (max-width: 450px) {
-  .projects .title-container #title-wmp {
+  .projects .wmp .title-container #title-wmp {
     visibility: hidden;
   }
+}
+.projects .wmp .image-container {
+  display: flex;
+  padding: 1em;
+}
+.projects .wmp .image-container img {
+  margin: 1em;
+  width: 30%;
 }
 
 .forms {

@@ -1,29 +1,44 @@
 .projects {
     background-color: $bg-projects;
+    height: 100vh;
 
-    .title-container {
-        // display: none;
-        width: 80%;
-        height: auto;
-        border: 1px solid red;
+    .wmp {
 
-        #title-wmp-stack {
-            visibility: hidden;
+        .title-container {
             // display: none;
-
-            @media screen and (max-width: $mobile-width) {
-                visibility: visible;
-            }
-        }
-        #title-wmp {
-            // visibility: visible;
-            // display: none;
-
-            @media screen and (max-width: $mobile-width) {
+            width: 80%;
+            // max-height: 80px;
+            border: 1px solid red;
+    
+            #title-wmp-stack {
                 visibility: hidden;
+                // display: none;
+    
+                @media screen and (max-width: $mobile-width) {
+                    visibility: visible;
+                }
             }
-
+            #title-wmp {
+                // visibility: visible;
+                // display: none;
+    
+                @media screen and (max-width: $mobile-width) {
+                    visibility: hidden;
+                }
+    
+            }
+            
         }
-        
+
+        .image-container {
+            display: flex;
+            padding: 1em;
+
+            img {
+                margin: 1em;
+                width: 30%;
+            }
+        }
+
     }
 }
