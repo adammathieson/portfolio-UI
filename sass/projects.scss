@@ -102,15 +102,27 @@
 
             
             .tech-logo {
-                border: 1px solid green;
+                // border: 1px solid green;
                 max-width: 573px;
+                // max-height: 150px;
                 margin: 0 2em 3em 2em;
                 flex: 1;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+                div {
+                    // display: none;
+                    // max-height: 70px;
+                    padding: 1em;
+                    // border: 1px solid pink;
+                }
+
             }
             .next-control {
                 // border: 1px solid yellow;
                 max-width: 180px;
-                align-self: flex-end; 
+                align-self: flex-end;
             }
         }
 
