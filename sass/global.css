@@ -1,0 +1,70 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(253, 250, 250, 0.993);
+}
+
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: rgba(61, 58, 58, 0.993);
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 20em 0;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+/*# sourceMappingURL=global.css.map */

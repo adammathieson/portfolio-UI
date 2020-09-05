@@ -74,11 +74,11 @@
                 img {
                     object-fit: contain;
                     margin: 1em;
-                    width: 30%;
+                    width: 33%;
                 }
             }
     
-            .description {
+            .description-container {
                 color: $primary-font;
                 padding: 0 1em 0 1em;
                 flex: 1;
@@ -112,6 +112,7 @@
                 align-items: center;
                 
                 div {
+                    display: none;
                     // display: none;
                     // max-height: 70px;
                     padding: 1em;
