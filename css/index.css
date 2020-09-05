@@ -114,7 +114,6 @@ img {
 svg {
   width: 100%;
   max-width: 100%;
-  height: auto;
 }
 
 button {
@@ -334,6 +333,9 @@ button {
   height: 100%;
   padding: 1em;
   border: 1px solid pink;
+}
+.projects #wmp .lower-container .tech-logo div svg {
+  height: 100%;
 }
 .projects #wmp .lower-container .next-control {
   max-width: 180px;
