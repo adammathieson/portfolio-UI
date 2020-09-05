@@ -1,9 +1,14 @@
 .projects {
     background-color: $bg-projects;
-    height: 100vh;
+    min-height: 100vh;
     max-height: 100%;
     // max-width: 1400px;
     // margin: 0 auto;
+
+    // @media screen and (max-width: $tablet-width) {
+    //     height: 100%;
+        
+    // }
 
     #wmp {
         display: flex;
@@ -12,31 +17,17 @@
         padding: 2em;
         justify-content: space-around;
 
-        // margin: auto;
-
-
         .title-container {
             // display: none;
             max-width: 80%;
             border: 1px solid blue;
-            margin: 1em 0 0 1em;
-            // flex: 1;
+            // margin: 1em 0 0 1em;
 
             .full-title {
                 @media screen and (max-width: $mobile-width) {
                     // height: 100%;
                     width: 100%;
                     display: none;
-                }
-                @media screen and (min-width: $tablet-width) {
-                    // flex-direction: row;
-                    // padding-left: 3em;
-                    // padding-top: 3em;
-                }
-                @media screen and (min-width: $desktop-width) {
-                    // flex-direction: row;
-                    // padding-left: 6em;
-                    // padding-top: 6em;
                 }
             }
     
@@ -95,11 +86,30 @@
             }
         }
 
-        .tech-logo {
-            border: 1px solid green;
-            max-width: 573px;
-            // margin-bottom: 1em;
+        .lower-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 1em 0 1em;
+            border: 1px solid white;
+            
+            @media screen and (max-width: $tablet-width) {
+                flex-direction: column;
+                // align-items: flex-end;
+            }
+
+            
+            .tech-logo {
+                border: 1px solid green;
+                max-width: 573px;
+                margin-bottom: 3em;
+            }
+            .next-control {
+                border: 1px solid yellow;
+                max-width: 210px;
+                align-self: flex-end; 
+            }
         }
+
 
     }
 }
