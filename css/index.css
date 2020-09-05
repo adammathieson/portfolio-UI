@@ -236,19 +236,17 @@ button {
 
 .projects {
   background-color: #BCD3DB;
-  min-height: 100vh;
   max-height: 100%;
+  height: 100vh;
 }
 .projects #wmp {
   display: flex;
   flex-direction: column;
-  border: 1px solid orange;
   padding: 2em;
   justify-content: space-around;
 }
 .projects #wmp .title-container {
   max-width: 80%;
-  border: 1px solid blue;
 }
 @media screen and (max-width: 450px) {
   .projects #wmp .title-container .full-title {
@@ -266,7 +264,6 @@ button {
   }
 }
 .projects #wmp .content-container {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
@@ -282,7 +279,6 @@ button {
   }
 }
 .projects #wmp .content-container .image-container {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   padding: 1em;
@@ -312,7 +308,6 @@ button {
   display: flex;
   justify-content: space-between;
   margin: 0 1em 0 1em;
-  border: 1px solid white;
 }
 @media screen and (max-width: 730px) {
   .projects #wmp .lower-container {
@@ -323,9 +318,10 @@ button {
   border: 1px solid green;
   max-width: 573px;
   margin-bottom: 3em;
+  margin-right: 2em;
+  flex: 1;
 }
 .projects #wmp .lower-container .next-control {
-  border: 1px solid yellow;
   max-width: 210px;
   align-self: flex-end;
 }
