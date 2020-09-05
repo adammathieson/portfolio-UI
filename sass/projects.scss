@@ -2,15 +2,16 @@
     background-color: $bg-projects;
     height: 100vh;
     max-height: 100%;
-    // max-width: 1400px;
     // margin: 0 auto;
-
+    
     // @media screen and (min-width: $desktop-width) {
-    //     height: 100vh;
+        //     height: 100vh;
         
-    // }
-
-    #wmp {
+        // }
+        
+        #wmp {
+        margin: 0 auto;
+        max-width: 1200px;
         display: flex;
         flex-direction: column;
         // border: 1px solid orange;
@@ -102,9 +103,9 @@
 
             
             .tech-logo {
-                // border: 1px solid green;
+                border: 1px solid green;
                 max-width: 573px;
-                // max-height: 150px;
+                max-height: 100px;
                 margin: 0 2em 3em 2em;
                 flex: 1;
                 display: flex;
@@ -113,10 +114,9 @@
                 
                 div {
                     display: none;
-                    // display: none;
-                    // max-height: 70px;
+                    height: 100%;
                     padding: 1em;
-                    // border: 1px solid pink;
+                    border: 1px solid pink;
                 }
 
             }

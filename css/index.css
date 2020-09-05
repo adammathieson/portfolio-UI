@@ -113,6 +113,8 @@ img {
 
 svg {
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -240,6 +242,8 @@ button {
   max-height: 100%;
 }
 .projects #wmp {
+  margin: 0 auto;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   padding: 2em;
@@ -316,7 +320,9 @@ button {
   }
 }
 .projects #wmp .lower-container .tech-logo {
+  border: 1px solid green;
   max-width: 573px;
+  max-height: 100px;
   margin: 0 2em 3em 2em;
   flex: 1;
   display: flex;
@@ -325,7 +331,9 @@ button {
 }
 .projects #wmp .lower-container .tech-logo div {
   display: none;
+  height: 100%;
   padding: 1em;
+  border: 1px solid pink;
 }
 .projects #wmp .lower-container .next-control {
   max-width: 180px;
