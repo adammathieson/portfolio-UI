@@ -236,8 +236,8 @@ button {
 
 .projects {
   background-color: #BCD3DB;
-  max-height: 100%;
   height: 100vh;
+  max-height: 100%;
 }
 .projects #wmp {
   display: flex;
@@ -282,11 +282,12 @@ button {
   display: flex;
   justify-content: center;
   padding: 1em;
-  flex: 1;
+  max-height: 475px;
+  width: 65%;
 }
-@media screen and (min-width: 730px) {
+@media screen and (max-width: 730px) {
   .projects #wmp .content-container .image-container {
-    width: 60%;
+    width: 100%;
   }
 }
 .projects #wmp .content-container .image-container img {
@@ -317,12 +318,11 @@ button {
 .projects #wmp .lower-container .tech-logo {
   border: 1px solid green;
   max-width: 573px;
-  margin-bottom: 3em;
-  margin-right: 2em;
+  margin: 0 2em 3em 2em;
   flex: 1;
 }
 .projects #wmp .lower-container .next-control {
-  max-width: 210px;
+  max-width: 180px;
   align-self: flex-end;
 }
 
