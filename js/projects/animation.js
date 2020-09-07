@@ -56,6 +56,30 @@ export function animations() {
         opacity: [0,1],
         easing: 'easeInOutCubic',
     })
+
+    var reactLogo = anime({
+        targets: '#react-logo svg',
+        rotate: 360,
+        duration: 1000,
+        easing: 'linear'
+    })
+
+    var reduxLogo = anime({
+        targets: '#redux-logo svg',
+        translateX: [10, 0],
+        opacity: [0,1],
+        duration: 1000,
+        easing: 'linear'
+    })
+    
+    var materialUiLogo = anime({
+        targets: '#material-ui-logo svg',
+        // scaleY: [-1, 1],
+        scaleX: [-1, 1],
+        // opacity: [0,1],
+        duration: 1000,
+        easing: 'linear'
+    })
 }
 
 
