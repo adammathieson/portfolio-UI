@@ -25,7 +25,7 @@ function setElementHeight() {
     var deviceHeight = window.innerHeight
     page.setAttribute('height', String(deviceHeight))
     landingBg.setAttribute('height', String(deviceHeight))
-    console.log('->>> ', landingBg.getAttribute('height'))
+    // console.log('->>> ', landingBg.getAttribute('height'))
     return 
 }
 setElementHeight()

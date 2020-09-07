@@ -299,7 +299,7 @@ button {
   width: 33%;
 }
 .projects #wmp .content-container .description-container {
-  color: #073D4F;
+  color: "Roboto", sans-serif;
   padding: 0 1em 0 1em;
   flex: 1;
 }
@@ -346,7 +346,7 @@ button {
   font-family: "Major Mono Display", monospace;
   padding: 0;
   background-color: inherit;
-  color: #073D4F;
+  color: "Roboto", sans-serif;
   cursor: pointer;
   text-align: left;
   height: 50px;

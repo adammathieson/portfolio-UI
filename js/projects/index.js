@@ -1,9 +1,10 @@
 import {projects} from './projects.js'
-console.log(projects)
+import {animations} from './animation.js'
+// console.log(projects)
 
     const projectLoader = (projectArr, id) => {
         let project = projectArr[id]
-        console.log('===>', project.icons)
+        // console.log(project.icons)
         
         const logos = window.document.querySelectorAll('.tech-logo div')
         const description = window.document.querySelector('#description')
@@ -26,3 +27,4 @@ console.log(projects)
 }
 
 projectLoader(projects, 'wmp')
+animations()
