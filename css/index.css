@@ -362,8 +362,8 @@ button {
 }
 .projects #wmp .lower-container .next-control .chevron-svg svg {
   height: 100%;
+  overflow: visible;
 }
-
 .forms {
   background-color: #f79a9a;
 }

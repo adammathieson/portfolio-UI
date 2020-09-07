@@ -41,6 +41,21 @@ export function animations() {
         // autoplay: false,
     })
 
+    var nextBtn = anime({
+        targets: '.next-control button',
+        translateX: [20, 0],
+        opacity: [0, 1],
+        duration: 500,
+        easing: 'easeInOutCubic',
+    })
+
+    var chevron = anime({
+        targets: '.chevron-svg',
+        translateX: [-20, 0],
+        duration: 500,
+        opacity: [0,1],
+        easing: 'easeInOutCubic',
+    })
 }
 
 
