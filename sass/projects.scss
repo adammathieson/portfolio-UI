@@ -2,31 +2,22 @@
     background-color: $bg-projects;
     height: 100vh;
     max-height: 100%;
-    // margin: 0 auto;
-    
-    // @media screen and (min-width: $desktop-width) {
-        //     height: 100vh;
-        
-        // }
         
         #wmp {
+        // border: 1px solid orange;
         margin: 0 auto;
         max-width: 1200px;
         display: flex;
         flex-direction: column;
-        // border: 1px solid orange;
         padding: 2em;
         justify-content: space-around;
 
         .title-container {
-            // display: none;
-            max-width: 80%;
             // border: 1px solid blue;
-            // margin: 1em 0 0 1em;
+            max-width: 80%;
 
             .full-title {
                 @media screen and (max-width: $mobile-width) {
-                    // height: 100%;
                     width: 100%;
                     display: none;
                 }
@@ -46,15 +37,12 @@
             // border: 1px solid red;
             display: flex;
             flex-direction: column;
-            // flex: 0;
-            // max-height: 80%;
 
             @media screen and (min-width: $tablet-width) {
                 flex-direction: row;
                 padding: 1em 2em 0 2em;
             }
             @media screen and (min-width: $desktop-width) {
-                // flex-direction: row;
                 padding: 2em 4em 0 4em;
             }
 
@@ -64,8 +52,6 @@
                 justify-content: center;
                 padding: 1em;
                 max-height: 475px;
-                // max-width: 680;
-                // flex: 1;
                 width: 65%;
                 
                 @media screen and (max-width: $tablet-width) {
@@ -91,10 +77,10 @@
         }
 
         .lower-container {
+            // border: 1px solid white;
             display: flex;
             justify-content: space-between;
             margin: 0 1em 0 1em;
-            // border: 1px solid white;
             
             @media screen and (max-width: $tablet-width) {
                 flex-direction: column;
@@ -103,7 +89,7 @@
 
             
             .tech-logo {
-                border: 1px solid green;
+                // border: 1px solid green;
                 max-width: 573px;
                 max-height: 100px;
                 margin: 0 2em 3em 2em;
@@ -113,10 +99,10 @@
                 align-items: center;
                 
                 div {
+                    // border: 1px solid pink;
                     display: none;
                     height: 100%;
                     padding: 1em;
-                    border: 1px solid pink;
 
                     svg {
                         height: 100%;
@@ -126,11 +112,36 @@
             }
             .next-control {
                 // border: 1px solid yellow;
-                max-width: 180px;
                 align-self: flex-end;
+                height: 50px;
+                
+                button {
+                    font-size: 2rem;
+                    z-index: 2;
+                    border: 0;
+                    font-family: $header-font;
+                    padding: 0;
+                    background-color: inherit;
+                    color: $primary-font;
+                    cursor: pointer;
+                    text-align: left;
+                    height: 50px;
+                    width: 140px;
+                }
+                .chevron-svg {
+                    // border: 1px solid blue;
+                    position: relative;
+                    top: -50px;
+                    left: 110px;
+                    cursor: pointer;
+                    height: inherit;
+                    width: 30px;
+
+                    svg {
+                        height: 100%;
+                    }
+                }
             }
         }
-
-
     }
 }
