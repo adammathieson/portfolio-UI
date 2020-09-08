@@ -57,6 +57,19 @@ export function animations() {
         easing: 'easeInOutCubic',
     })
 
+    // var chevB = anime({
+    //     targets: '#chev-1',
+    //     rotate: 45,
+    //     duration: 4000,
+    //     translateOrigin: '50% 50%',
+    // })
+    // var chevA = anime({
+    //     targets: '#chev-2',
+    //     rotate: -45,
+    //     duration: 2000,
+    //     translateOrigin: '100% 0%',
+    // })
+
     var reactLogo = anime({
         targets: '#react-logo svg',
         rotate: 360,
@@ -64,13 +77,43 @@ export function animations() {
         easing: 'linear'
     })
 
+    // var reduxLogo = anime({
+    //     targets: '#Vector',
+    // //     translateX: [10, 0],
+    // //     opacity: [0,1],
+    //     duration: 1000,
+    //     easing: 'linear'
+    // })
     var reduxLogo = anime({
-        targets: '#redux-logo svg',
-        translateX: [10, 0],
+         targets: '#Vector path',
+         strokeDashoffset: [anime.setDashoffset, 0],
+        //  opacity: [0,1],
+         easing: 'easeInOutSine',
+         duration: 1500,
+         delay: function(el, i) { return i * 250 },
+         direction: 'alternate',
+        //  loop: true
+       })
+    var reduxLogo = anime({
+        targets: '#Vector path',
+        fill: "#764ABC",
+        //  opacity: [0,1],
+        easing: 'easeInOutSine',
+        duration: 1500,
+        delay: 800,
+        // delay: function(el, i) { return i * 250 },
+        // direction: 'alternate',
+        //  loop: true
+        })
+    var reduxLogoTitle = anime({
+        targets: '#Redux',
+        // translateX: [10, 0],
         opacity: [0,1],
-        duration: 1000,
+        duration: 400,
+        delay: 800,
         easing: 'linear'
     })
+
     
     var materialUiLogo = anime({
         targets: '#material-ui-logo svg',
@@ -80,6 +123,16 @@ export function animations() {
         duration: 1000,
         easing: 'linear'
     })
+
+    var momentLogo = anime({
+        targets: '#moment-logo svg',
+        // scaleY: [-1, 1],
+        scaleY: [0, 1],
+        // opacity: [0,1],
+        duration: 1000,
+        easing: 'linear'
+    })
+
 }
 
 
