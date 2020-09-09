@@ -77,34 +77,28 @@ export function animations() {
         easing: 'linear'
     })
 
-    // var reduxLogo = anime({
-    //     targets: '#Vector',
-    // //     translateX: [10, 0],
-    // //     opacity: [0,1],
-    //     duration: 1000,
-    //     easing: 'linear'
-    // })
     var reduxLogo = anime({
-         targets: '#Vector path',
-         strokeDashoffset: [anime.setDashoffset, 0],
+        targets: '#Vector path',
+        strokeDashoffset: [anime.setDashoffset, 0],
         //  opacity: [0,1],
-         easing: 'easeInOutSine',
-         duration: 1500,
-         delay: function(el, i) { return i * 250 },
-         direction: 'alternate',
+        easing: 'easeInOutSine',
+        duration: 1000,
+        delay: function(el, i) { return i * 250 },
+        // direction: 'alternate',
         //  loop: true
-       })
+    })
+
     var reduxLogo = anime({
         targets: '#Vector path',
         fill: "#764ABC",
         //  opacity: [0,1],
         easing: 'easeInOutSine',
         duration: 1500,
-        delay: 800,
-        // delay: function(el, i) { return i * 250 },
+        delay: 1000,
         // direction: 'alternate',
         //  loop: true
-        })
+    })
+    
     var reduxLogoTitle = anime({
         targets: '#Redux',
         // translateX: [10, 0],
@@ -114,21 +108,16 @@ export function animations() {
         easing: 'linear'
     })
 
-    
     var materialUiLogo = anime({
         targets: '#material-ui-logo svg',
-        // scaleY: [-1, 1],
         scaleX: [-1, 1],
-        // opacity: [0,1],
         duration: 1000,
         easing: 'linear'
     })
 
     var momentLogo = anime({
         targets: '#moment-logo svg',
-        // scaleY: [-1, 1],
         scaleY: [0, 1],
-        // opacity: [0,1],
         duration: 1000,
         easing: 'linear'
     })

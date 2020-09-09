@@ -239,6 +239,7 @@ button {
   background-color: #BCD3DB;
   height: 100vh;
   max-height: 100%;
+  min-height: 670px;
 }
 .projects #wmp {
   margin: 0 auto;
@@ -299,7 +300,7 @@ button {
   width: 33%;
 }
 .projects #wmp .content-container .description-container {
-  color: "Roboto", sans-serif;
+  color: #073D4F;
   padding: 0 1em 0 1em;
   flex: 1;
 }
@@ -319,8 +320,8 @@ button {
   }
 }
 .projects #wmp .lower-container .tech-logo {
-  max-width: 573px;
-  max-height: 100px;
+  max-width: 500px;
+  max-height: 75px;
   margin: 0 2em 3em 2em;
   flex: 1;
   display: flex;
@@ -346,7 +347,7 @@ button {
   font-family: "Major Mono Display", monospace;
   padding: 0;
   background-color: inherit;
-  color: "Roboto", sans-serif;
+  color: #073D4F;
   cursor: pointer;
   text-align: left;
   height: 50px;
