@@ -28,10 +28,10 @@ import {animations} from './animation.js'
             images.appendChild(img)
         })
 
-        console.log({imgWidth})
+        // console.log({imgWidth})
         // images.style.width = 
     
 }
 
-projectLoader(projects, 'endrsd')
+projectLoader(projects, 'wmp')
 animations()

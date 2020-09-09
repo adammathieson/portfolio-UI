@@ -2,7 +2,7 @@
 export function animations() {
     var logos = window.document.querySelectorAll('.tech-logo div')
     var images = window.document.querySelectorAll('.image-container img')
-    console.log({images})
+    // console.log({images})
     
     var genericTitleSlide = anime({
         targets: '.title-container',
@@ -98,7 +98,7 @@ export function animations() {
         // direction: 'alternate',
         //  loop: true
     })
-    
+
     var reduxLogoTitle = anime({
         targets: '#Redux',
         // translateX: [10, 0],
@@ -120,6 +120,22 @@ export function animations() {
         scaleY: [0, 1],
         duration: 1000,
         easing: 'linear'
+    })
+    var node = anime({
+        targets: '#nodejs-logo',
+        opacity: [0,1],
+        duration: 3000,
+        delay: 500,
+        // transformOrigin: ['95px 25px', '95px 25px'],
+        // alternate: true,
+    })
+    var nodeE = anime({
+        targets: '#node-e',
+        rotate: [-45, 0],
+        duration: 2000,
+        delay: 1000,
+        transformOrigin: ['95px 25px', '95px 25px'],
+        alternate: true,
     })
 
 }
