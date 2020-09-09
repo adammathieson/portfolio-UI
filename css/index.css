@@ -297,7 +297,6 @@ button {
 .projects #wmp .content-container .image-container img {
   object-fit: contain;
   margin: 1em;
-  width: 33%;
 }
 .projects #wmp .content-container .description-container {
   color: #073D4F;

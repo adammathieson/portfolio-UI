@@ -18,13 +18,20 @@ import {animations} from './animation.js'
             }
         })
 
+        // to set image container width
+        let imgWidth = Math.floor((1 / project.images.length) * 100)
+
         project.images.forEach(url => {
             const img = document.createElement('img')
             img.src = url
+            img.style.width = String(imgWidth) + '%'
             images.appendChild(img)
         })
+
+        console.log({imgWidth})
+        // images.style.width = 
     
 }
 
-projectLoader(projects, 'wmp')
+projectLoader(projects, 'endrsd')
 animations()
