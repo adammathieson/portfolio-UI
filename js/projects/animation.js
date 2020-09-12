@@ -1,6 +1,6 @@
 
 export function animations() {
-    var logos = window.document.querySelectorAll('.tech-logo div')
+    var logosContainer = window.document.querySelectorAll('.tech-logo div')
     var images = window.document.querySelectorAll('.image-container img')
     // console.log({images})
     
@@ -57,21 +57,8 @@ export function animations() {
         easing: 'easeInOutCubic',
     })
 
-    // var chevB = anime({
-    //     targets: '#chev-1',
-    //     rotate: 45,
-    //     duration: 4000,
-    //     translateOrigin: '50% 50%',
-    // })
-    // var chevA = anime({
-    //     targets: '#chev-2',
-    //     rotate: -45,
-    //     duration: 2000,
-    //     translateOrigin: '100% 0%',
-    // })
-
     var reactLogo = anime({
-        targets: '#react-logo svg',
+        targets: '#react-logo',
         rotate: 360,
         duration: 1000,
         easing: 'linear'
@@ -121,23 +108,46 @@ export function animations() {
         duration: 1000,
         easing: 'linear'
     })
-    var node = anime({
-        targets: '#nodejs-logo',
-        opacity: [0,1],
-        duration: 3000,
-        delay: 500,
-        // transformOrigin: ['95px 25px', '95px 25px'],
-        // alternate: true,
-    })
-    var nodeE = anime({
-        targets: '#node-e',
-        rotate: [-45, 0],
-        duration: 2000,
-        delay: 1000,
-        transformOrigin: ['95px 25px', '95px 25px'],
-        alternate: true,
-    })
 
+    var tlNode = anime.timeline({
+        duration: 1000,
+    })
+        .add ({
+            targets: '#node-2,#node-3,#node-1,#node-4,#edge-2,#edge-3,#edge-1',
+            opacity: 1,
+            // duration: 1,
+            delay: anime.stagger(100),
+        })
+        .add({
+            targets: '#edge-2,#edge-3,#edge-1',
+            opacity: 0,
+            delay: anime.stagger(250),
+        }, '+=500')
+        .add({
+            targets: '#node-3,#node-1',
+            translateY: '5px',
+            opacity: 0,
+        })
+        .add({
+            targets: '#node-2,#node-4',
+            translateY: '-5px',
+            opacity: 0,
+        }, '-=1000')
+        .add({
+            targets: '#node-n,#node-o,#node-d,#node-e',
+            opacity: 1,
+            delay: anime.stagger(250),
+        }, '-=1100')
+        .add({
+            targets: '#node-e',
+            rotate: [-45, 0],
+            transformOrigin: ['95px 25px', '95px 25px'],
+        })
+        .add({
+            targets: '#node-js-and-tm',
+            opacity: 1,
+            translateY: [5, 0],
+        }, '-=500')
 }
 
 

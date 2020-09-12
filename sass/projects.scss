@@ -93,7 +93,7 @@
             .tech-logo {
                 // border: 1px solid green;
                 max-width: 500px;
-                max-height: 75px;
+                max-height: 100px;
                 margin: 0 2em 3em 2em;
                 flex: 1;
                 display: flex;
@@ -104,7 +104,7 @@
                     // border: 1px solid pink;
                     display: none;
                     height: 100%;
-                    padding: 1em;
+                    padding: .5em;
 
                     svg {
                         height: 100%;
@@ -142,7 +142,6 @@
                     svg {
                         height: 100%;
                         overflow: visible;
-                        
                     }
                 }
             }
