@@ -110,44 +110,58 @@ export function animations() {
     })
 
     var tlNode = anime.timeline({
-        duration: 1000,
+        // duration: 1000,
+        // loop: true,
+        delay: 1000,
+        // direction: 'alternate',
+        // autoplay: false,
     })
         .add ({
             targets: '#node-2,#node-3,#node-1,#node-4,#edge-2,#edge-3,#edge-1',
             opacity: 1,
             // duration: 1,
-            delay: anime.stagger(100),
+            delay: anime.stagger(250),
         })
         .add({
             targets: '#edge-2,#edge-3,#edge-1',
             opacity: 0,
-            delay: anime.stagger(250),
-        }, '+=500')
-        .add({
-            targets: '#node-3,#node-1',
-            translateY: '5px',
-            opacity: 0,
+            delay: anime.stagger(100),
         })
         .add({
-            targets: '#node-2,#node-4',
+            targets: '#node-3,#node-1',
             translateY: '-5px',
-            opacity: 0,
+            // opacity: 0,
         }, '-=1000')
+        .add({
+            targets: '#node-2',
+            translateY: '5px',
+            // opacity: 0,
+        }, '-=2000')
+
         .add({
             targets: '#node-n,#node-o,#node-d,#node-e',
             opacity: 1,
             delay: anime.stagger(250),
         }, '-=1100')
         .add({
+            targets: '#node-2,#node-3,#node-1,#node-4',
+            opacity: 0,
+            delay: anime.stagger(200),
+        }, '-=1500')
+        .add({
             targets: '#node-e',
             rotate: [-45, 0],
+            translateY: [2, 0],
+            translateX: [-2, 0],
             transformOrigin: ['95px 25px', '95px 25px'],
-        })
+        }, '-=1000')
         .add({
             targets: '#node-js-and-tm',
             opacity: 1,
             translateY: [5, 0],
-        }, '-=500')
+        }, '-=1500')
+
+        // tlNode.play()
 }
 
 
