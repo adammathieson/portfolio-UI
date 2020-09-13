@@ -7,8 +7,8 @@ export const projects = {
         
     ],
     description: 'A scheduling and notification app to assist users on when and how to care for their plants. Worked as a front-end developer on this one week build while maintaining thorough remote communication with a collaborative five person team including UI, back end, additional front end engineer, and team leader.',
-    // icons: ['nodejs-logo'],
-    icons: ['react-logo', 'redux-logo', 'nodejs-logo', 'material-ui-logo', 'moment-logo'],
+    icons: ['nodejs-logo'],
+    // icons: ['react-logo', 'redux-logo', 'nodejs-logo', 'material-ui-logo', 'moment-logo'],
 },
 endrsd : {
     images: ['image/projects/endrsd/v2_student_demo.gif'],
