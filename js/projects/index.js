@@ -12,12 +12,19 @@ const projectLoader = () => {
 
     description.textContent = project.description
 
+    if (logos.length) {
+        logos.forEach(logo => logo.style.display = 'none')
+    }
+
+    let iconWidth = Math.floor((1 / project.icons.length) * 100)
     logos.forEach(logo => {
         if (project.icons.includes(logo.id)) {
             logo.style.display = 'block'
-        } else {
-            logo.style.display = 'none'
-        }
+            logo.style.width = String(iconWidth) + '%'
+        } 
+        // else {
+        //     logo.style.display = 'none'
+        // }
     })
 
     // Set image container width

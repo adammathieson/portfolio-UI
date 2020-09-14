@@ -59,7 +59,7 @@ export function animations() {
 
     var reactLogo = anime({
         targets: '#react-logo',
-        rotate: 360,
+        rotate: [0, 360],
         duration: 1000,
         easing: 'linear'
     })
@@ -118,34 +118,34 @@ export function animations() {
     })
         .add ({
             targets: '#node-2,#node-3,#node-1,#node-4,#edge-2,#edge-3,#edge-1',
-            opacity: 1,
+            opacity: [0,1],
             // duration: 1,
             delay: anime.stagger(250),
         })
         .add({
             targets: '#edge-2,#edge-3,#edge-1',
-            opacity: 0,
+            opacity: [0.1],
             delay: anime.stagger(100),
         })
         .add({
             targets: '#node-3,#node-1',
-            translateY: '-5px',
+            translateY: ['0px', '-5px'],
             // opacity: 0,
         }, '-=1000')
         .add({
             targets: '#node-2',
-            translateY: '5px',
+            translateY: ['0px', '5px'],
             // opacity: 0,
         }, '-=2000')
 
         .add({
             targets: '#node-n,#node-o,#node-d,#node-e',
-            opacity: 1,
+            opacity: [0,1],
             delay: anime.stagger(250),
         }, '-=1100')
         .add({
             targets: '#node-2,#node-3,#node-1,#node-4',
-            opacity: 0,
+            opacity: [1,0],
             delay: anime.stagger(200),
         }, '-=1500')
         .add({
@@ -157,11 +157,16 @@ export function animations() {
         }, '-=1000')
         .add({
             targets: '#node-js-and-tm',
-            opacity: 1,
+            opacity: [0,1],
             translateY: [5, 0],
         }, '-=1500')
-
-        // tlNode.play()
+        tlNode.restart()
+        // if (!tlNode.paused) {
+        //     console.log('restarting')
+        //     tlNode.restart()
+        // } 
+    
+        // console.log(tlNode)
 }
 
 

@@ -99,7 +99,7 @@
                 max-width: 500px;
                 max-height: 100px;
                 margin: 0 2em 3em 2em;
-                flex: 1;
+                // flex: 1;
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
@@ -112,6 +112,7 @@
 
                     svg {
                         height: 100%;
+                        
                     }
                 }
 
