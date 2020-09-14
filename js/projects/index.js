@@ -9,6 +9,8 @@ import {animations} from './animation.js'
         const logos = window.document.querySelectorAll('.tech-logo div')
         const description = window.document.querySelector('#description')
         const images = window.document.querySelector('.image-container')
+        const titles = window.document.querySelectorAll('.title-container div')
+
         
         description.textContent = project.description
 
@@ -28,8 +30,15 @@ import {animations} from './animation.js'
             images.appendChild(img)
         })
 
-        // console.log({imgWidth})
-        // images.style.width = 
+        // set title
+        titles.forEach(title => {
+            if (title.id === `${id}-title`) {
+                title.style.display = 'block'
+            }
+            // console.log(title)
+        })
+
+
     
 }
 
