@@ -1,15 +1,17 @@
 import {projects} from './projects.js'
 import {animations} from './animation.js'
-// console.log(projects)
+    
 
-    const projectLoader = (projectArr, id) => {
-        let project = projectArr[id]
-        // console.log(project.icons)
+    const projectLoader = (projectArr) => {
+        let current = 0
+        let project = projectArr[current]
+        // console.log(project)
         
         const logos = window.document.querySelectorAll('.tech-logo div')
         const description = window.document.querySelector('#description')
         const images = window.document.querySelector('.image-container')
         const titles = window.document.querySelectorAll('.title-container div')
+        const nextBtn = window.document.querySelector('.next-control button')
 
         
         description.textContent = project.description
@@ -32,15 +34,26 @@ import {animations} from './animation.js'
 
         // set title
         titles.forEach(title => {
-            if (title.id === `${id}-title`) {
+            if (title.id === `${project.id}-title`) {
                 title.style.display = 'block'
             }
-            // console.log(title)
+        })
+
+        // Select a project
+
+        nextBtn.addEventListener('click', () => {
+            if (current === projectArr.length -1) {
+                current = 0
+            } else {
+                current++
+                projectLoader(projects)
+                console.log(current)
+            }
         })
 
 
     
 }
 
-projectLoader(projects, 'endrsd')
+projectLoader(projects)
 animations()
