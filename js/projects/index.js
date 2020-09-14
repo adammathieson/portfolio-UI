@@ -33,5 +33,5 @@ import {animations} from './animation.js'
     
 }
 
-projectLoader(projects, 'wmp')
+projectLoader(projects, 'endrsd')
 animations()
