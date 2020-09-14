@@ -4,35 +4,33 @@ import {animations} from './animation.js'
 let current = 0 
 const projectLoader = () => {
     let project = projects[current]
-    // console.log(project)
     
     const logos = window.document.querySelectorAll('.tech-logo div')
     const description = window.document.querySelector('#description')
     const images = window.document.querySelector('.image-container')
     const titles = window.document.querySelectorAll('.main-title')
-    // console.log(images.children)
 
-    
     description.textContent = project.description
 
     logos.forEach(logo => {
         if (project.icons.includes(logo.id)) {
             logo.style.display = 'block'
+        } else {
+            logo.style.display = 'none'
         }
     })
 
+    // Set image container width
+    let imgWidth = Math.floor((1 / project.images.length) * 100)
 
-    // Clear out any images in container
+    // Clear out old images
     if(images.children.length > 0) {
-        console.log(images.children.length)
         while(images.firstChild) {
             images.removeChild(images.firstChild)
         }
     }
 
-    // to set image container width
-    let imgWidth = Math.floor((1 / project.images.length) * 100)
-
+    // inset new images
     project.images.forEach(url => {
         const img = document.createElement('img')
         img.src = url
@@ -47,18 +45,11 @@ const projectLoader = () => {
             } else {
                     title.style.display = 'none'
                 }
-                // console.log(title)
     })
-
-    
-    
-    
 }
     
 // Select a project
-
 const nextBtn = window.document.querySelector('.next-control button')
-
 nextBtn.addEventListener('click', () => {
     if (current === projects.length -1) {
         current = 0
@@ -68,7 +59,8 @@ nextBtn.addEventListener('click', () => {
         // console.log(current)
     }
     projectLoader()
-
+    animations()
 })
-// projectLoader(projects)
+
+projectLoader()
 animations()
