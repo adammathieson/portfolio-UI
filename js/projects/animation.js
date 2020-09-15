@@ -112,15 +112,15 @@ export function animations() {
     var tlNode = anime.timeline({
         // duration: 1000,
         // loop: true,
-        delay: 1000,
+        // delay: 1000,
         // direction: 'alternate',
         // autoplay: false,
     })
         .add ({
             targets: '#node-2,#node-3,#node-1,#node-4,#edge-2,#edge-3,#edge-1',
             opacity: [0,1],
-            // duration: 1,
-            delay: anime.stagger(250),
+            duration: 500,
+            delay: anime.stagger(100),
         })
         .add({
             targets: '#edge-2,#edge-3,#edge-1',
