@@ -273,7 +273,6 @@ button {
 .projects #project-container .content-container {
   display: flex;
   flex-direction: column;
-  columns: 1rem;
 }
 @media screen and (min-width: 730px) {
   .projects #project-container .content-container {
@@ -383,6 +382,10 @@ button {
 #react-logo,
 #redux-logo {
   scale: 0.75;
+}
+
+#material-ui-logo {
+  scale: 0.8;
 }
 
 .forms {

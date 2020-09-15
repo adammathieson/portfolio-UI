@@ -22,9 +22,6 @@ const projectLoader = () => {
             logo.style.display = 'block'
             logo.style.width = String(iconWidth) + '%'
         } 
-        // else {
-        //     logo.style.display = 'none'
-        // }
     })
 
     // Set image container width
