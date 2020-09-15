@@ -273,6 +273,7 @@ button {
 .projects #project-container .content-container {
   display: flex;
   flex-direction: column;
+  columns: 1rem;
 }
 @media screen and (min-width: 730px) {
   .projects #project-container .content-container {

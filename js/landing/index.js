@@ -13,27 +13,26 @@ var curvedBgMobile = "M0 0H824.265C824.265 0 1228.7 207.512 824.265 540.025C485.
 var navTabs = document.querySelectorAll('.navbar nav a')
 
 // Device
-let deviceWidth = window.innerWidth
 var page = document.querySelector('#landing-svg')
 var landingBg = document.querySelector('.landing-container')
+let deviceWidth = window.innerWidth
 
 
 // Set height of transition svg, bg element
-function setElementHeight() {
+function setBackgroundHeight() {
+    var curvedBg = "M0 0H1086.91C1086.91 0 1261.61 178.138 907.481 530.245C627.731 808.399 775.72 1000 775.72 1000H0V0Z"
+    var curvedBgMobile = "M0 0H824.265C824.265 0 1228.7 207.512 824.265 540.025C485.813 818.285 1121 1000 1121 1000H0V0Z"
     // deviceWidth = window.innerWidth
     // console.log(deviceHeight, deviceWidth)
+    deviceWidth = window.innerWidth
     var deviceHeight = window.innerHeight
     page.setAttribute('height', String(deviceHeight))
-    landingBg.setAttribute('height', String(deviceHeight))
-    // console.log('->>> ', landingBg.getAttribute('height'))
-    return 
+    landingBg.setAttribute('height', String(deviceHeight)+'1')
+    console.log('->>> ', landingBg.getAttribute('height'), deviceWidth)
+    deviceWidth < mobileWidth ? console.log("curvedBgMobile") : console.log('curvedBg')
+    return deviceWidth < mobileWidth ? curvedBgMobile : curvedBg
 }
-setElementHeight()
-// var page = document.querySelector('#landing-svg')
-// var landingBg = document.querySelector('.landing-container')
-// page.setAttribute('height', String(deviceHeight))
-// landingBg.setAttribute('height', String(deviceHeight))
-// console.log(typeof(deviceHeight), page.getAttribute('height'))
+// setElementHeight()
 
 var tabletWidth = 620
 var mobileWidth = 450
@@ -67,7 +66,7 @@ tl.add({
 .add({
     targets: '#landing-bg-full',
     d: [
-        { value: deviceWidth < mobileWidth ? curvedBgMobile : curvedBg
+        { value: setBackgroundHeight()
         }],
     easing: 'easeOutQuad',
     direction: 'alternate',
@@ -107,31 +106,39 @@ tl.add({
 }, '-=3000')
 
 // Replay animation on resize
-var delay = 500
-var throttled = false
 // console.log(tl)
-async function restartAnimation() {
-    await setElementHeight()
-    // console.log(window.innerHeight)
-    // tl.reset()
-    tl.restart()
-}
-
-  // window.resize event listener
+// async function restartAnimation() {
+    //     await setElementHeight()
+    //     // console.log(window.innerHeight)
+    //     // tl.update()
+    //     tl.restart()
+    // }
+    
+    // window.resize event listener
+var delay = 250
+var throttled = false
 window.addEventListener('resize', function() {
-    // console.log('resize')
     if (!throttled) {
-      // actual callback action
-        // setElementHeight()
-        
-
-        restartAnimation()
-      // we're throttled!
+        setBackgroundHeight()
+        tl.restart()
         throttled = true;
       // set a timeout to un-throttle
         setTimeout(function() {
-            throttled = false;
-            // setElementHeight()
+            throttled = false;            
         }, delay);
     }  
 });
+
+let resizeId;
+window.addEventListener('resize', () => {
+    clearTimeout(resizeId)
+    resizeId = setTimeout(doneResizing, 500)
+
+})
+
+
+function doneResizing(){
+    setBackgroundHeight()
+    tl.reset()
+    tl.restart()
+}

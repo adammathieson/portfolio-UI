@@ -42,6 +42,7 @@
             // border: 1px solid red;
             display: flex;
             flex-direction: column;
+            columns: 1rem;
 
             @media screen and (min-width: $tablet-width) {
                 flex-direction: row;
@@ -112,7 +113,7 @@
 
                     svg {
                         height: 100%;
-                        
+
                     }
                 }
 
