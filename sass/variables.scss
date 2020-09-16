@@ -1,8 +1,15 @@
-$tablet-width: 620px;
+// Media queries
 $mobile-width: 450px;
+$tablet-width: 730px;
+$desktop-width: 900px;
 
-$primary-font: #E1DCC1;
+//colors
+$tab-font: #E1DCC1;
+$primary-font: #073D4F;
+// $primary-font: red;
 $bg-landing: #5F73C1;
+$bg-projects: #BCD3DB;
 
-$tabfont: 'Poiret One', cursive;
-
+//fonts
+$header: 'Major Mono Display', monospace;
+$primary: 'Roboto', sans-serif;
