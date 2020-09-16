@@ -390,6 +390,7 @@ button {
 
 .forms {
   background-color: #f79a9a;
+  padding: 1em;
 }
 .forms #west-face {
   display: none;
