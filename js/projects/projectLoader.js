@@ -66,5 +66,10 @@ nextBtn.addEventListener('click', () => {
     animations()
 })
 
+const chevronSvg = window.document.querySelector('.chevron-svg')
+chevronSvg.addEventListener('click', () => {
+    nextBtn.click()
+})
+
 projectLoader()
 animations()
