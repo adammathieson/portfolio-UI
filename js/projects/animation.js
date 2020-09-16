@@ -13,7 +13,7 @@ export function animations() {
         // autoplay: false,
     })
     
-    var descpriptionPopUp = anime({
+    var descriptionPopUp = anime({
         targets: '#description',
         translateY: [50, 0],
         opacity: [0,1],
@@ -110,11 +110,6 @@ export function animations() {
     })
 
     var tlNode = anime.timeline({
-        // duration: 1000,
-        // loop: true,
-        // delay: 1000,
-        // direction: 'alternate',
-        // autoplay: false,
     })
         .add ({
             targets: '#node-2,#node-3,#node-1,#node-4,#edge-2,#edge-3,#edge-1',
@@ -137,7 +132,6 @@ export function animations() {
             translateY: ['0px', '5px'],
             // opacity: 0,
         }, '-=2000')
-
         .add({
             targets: '#node-n,#node-o,#node-d,#node-e',
             opacity: [0,1],
@@ -160,13 +154,7 @@ export function animations() {
             opacity: [0,1],
             translateY: [5, 0],
         }, '-=1500')
-        tlNode.restart()
-        // if (!tlNode.paused) {
-        //     console.log('restarting')
-        //     tlNode.restart()
-        // } 
-    
-        // console.log(tlNode)
+        // tlNode.restart()
 }
 
 
