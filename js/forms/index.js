@@ -1,1 +1,1 @@
-import './registration.js'
+import './validate.js'

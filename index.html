@@ -516,11 +516,10 @@
           />
         </svg>
 
-        <form action="mailto:mathieson.ad@gmail.com" method="post" enctype="text/plain">
-
+        <form action="/" name="contact" method="POST" data-netlify="true">
           <div class="name">
-            <label for="fName">name</label>
-            <input type="text" id="name" name="fName" />
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" placeholder="enter your name"/>
           </div>
 
           <div class="email">
@@ -536,8 +535,8 @@
           <div class="submit-btn">
             <button type="submit">Send</button>
           </div>
-
         </form>
+
       </div>
     </section>
   </body>
@@ -547,5 +546,6 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
   <script type="module" src="./js/index.js"></script>
 </html>
