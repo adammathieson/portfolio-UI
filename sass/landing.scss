@@ -36,8 +36,8 @@
 
         a {
             text-decoration: none;
-            color: $tab-font;
-            border: 1px solid $tab-font;
+            color: $white;
+            border: 1px solid $white;
             border-radius: 50px;
             padding: .5em 1em;
             font-size: 2rem;
@@ -57,7 +57,7 @@
         }
 
         a:hover {
-            background: $tab-font;
+            background: $white;
             color: rgb(18, 128, 161);
         }
     }

@@ -389,11 +389,14 @@ button {
 }
 
 .forms {
-  background-color: #f79a9a;
+  background: linear-gradient(234.56deg, #51E3EC 0.75%, #A16DC6 100.51%);
   padding: 1em;
 }
 .forms #west-face {
   display: none;
+}
+.forms .contact-form-container {
+  padding: 1em;
 }
 
 /*# sourceMappingURL=index.css.map */

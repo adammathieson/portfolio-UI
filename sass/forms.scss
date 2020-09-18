@@ -1,5 +1,5 @@
 .forms {
-    background-color: rgb(247, 154, 154);
+    background: $bg-contact;
     padding: 1em;
     
     #west-face {
@@ -7,6 +7,10 @@
     }
     #east-face {
         // display: none;
+    }
+    .contact-form-container {
+        // background: $bg-contact;
+        padding: 1em;
     }
 }
 
