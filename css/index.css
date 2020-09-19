@@ -391,24 +391,63 @@ button {
 .forms {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background: linear-gradient(234.56deg, #51E3EC 0.75%, #A16DC6 100.51%);
   height: 100vh;
   max-height: 100%;
   min-height: 670px;
   padding: 1em;
 }
-.forms .form-header .title-box {
+.forms .title-box {
   display: flex;
+  margin: 4rem 1rem 0 1rem;
 }
-.forms .form-header .animation-box .svg-container {
+.forms .title-box .left-title {
+  transform: rotate(-30deg) translate3d(20px, -20px, 0);
+}
+.forms .animation-box {
+  border: 1px solid orange;
+}
+.forms .animation-box .svg-container {
   margin: 0 auto;
-  width: 50%;
+  max-width: 35%;
 }
-.forms #west-face {
-  display: none;
+.forms .form-text-box {
+  border: 1px solid green;
+}
+.forms .form-text-box span p {
+  text-align: center;
+  font-size: 2.5rem;
 }
 .forms .contact-form-container {
-  padding: 1em;
+  border: 1px solid yellow;
+  height: 50%;
+}
+.forms .contact-form-container form {
+  border: 1px solid pink;
+  margin: auto;
+  max-width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.forms .contact-form-container form .form-field {
+  border: 0;
+  width: 100%;
+  height: 5vh;
+  border-radius: 5px;
+}
+.forms .contact-form-container form .message textarea {
+  height: 15vh;
+}
+.forms .contact-form-container form .submit-btn button {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  background: #30F4B2;
 }
 
 /*# sourceMappingURL=index.css.map */
