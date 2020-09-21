@@ -389,42 +389,67 @@ button {
 }
 
 .forms {
+  background: linear-gradient(234.56deg, #51E3EC 0.75%, #A16DC6 100.51%);
+}
+
+.form-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(234.56deg, #51E3EC 0.75%, #A16DC6 100.51%);
+  max-width: 1200px;
   height: 100vh;
+  width: 100%;
   max-height: 100%;
   min-height: 670px;
   padding: 1em;
+  margin: 0 auto;
 }
-.forms .title-box {
+@media screen and (min-width: 730px) {
+  .form-body {
+    flex-direction: row-reverse;
+  }
+}
+.form-body .form-header-content {
+  border: 1px solid white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form-body .form-header-content .title-box {
   display: flex;
   margin: 4rem 1rem 0 1rem;
 }
-.forms .title-box .left-title {
+.form-body .form-header-content .title-box .left-title {
   transform: rotate(-30deg) translate3d(20px, -20px, 0);
 }
-.forms .animation-box {
+.form-body .form-header-content .animation-box {
   border: 1px solid orange;
+  max-height: 40%;
+  margin-top: 3rem;
 }
-.forms .animation-box .svg-container {
+.form-body .form-header-content .animation-box .svg-container {
   margin: 0 auto;
+  height: 100%;
   max-width: 35%;
 }
-.forms .form-text-box {
-  border: 1px solid green;
+.form-body .form-header-content .animation-box .svg-container svg {
+  height: 100%;
 }
-.forms .form-text-box span p {
+.form-body .form-header-content .form-text-box {
+  flex: 0;
+  min-height: 35%;
+  border: 1px solid green;
+  margin-top: 3rem;
+}
+.form-body .form-header-content .form-text-box span p {
   text-align: center;
   font-size: 2.5rem;
 }
-.forms .contact-form-container {
-  border: 1px solid yellow;
+.form-body .contact-form-container {
   height: 50%;
 }
-.forms .contact-form-container form {
-  border: 1px solid pink;
+.form-body .contact-form-container form {
   margin: auto;
   max-width: 80%;
   height: 100%;
@@ -432,16 +457,16 @@ button {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.forms .contact-form-container form .form-field {
+.form-body .contact-form-container form .form-field {
   border: 0;
   width: 100%;
   height: 5vh;
   border-radius: 5px;
 }
-.forms .contact-form-container form .message textarea {
+.form-body .contact-form-container form .message textarea {
   height: 15vh;
 }
-.forms .contact-form-container form .submit-btn button {
+.form-body .contact-form-container form .submit-btn button {
   margin-top: 2rem;
   width: 100%;
   padding: 0.5rem;
