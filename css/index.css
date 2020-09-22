@@ -388,6 +388,10 @@ button {
   scale: 0.8;
 }
 
+#scratch-leg {
+  transform-origin: bottom left;
+}
+
 .forms {
   background: linear-gradient(234.56deg, #51E3EC 0.75%, #A16DC6 100.51%);
 }

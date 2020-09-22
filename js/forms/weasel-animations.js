@@ -13,7 +13,17 @@ export function weaselScratch() {
     weaselAltFace.style.visibility = 'hidden'
     weaselForwardFace.style.visibility = 'hidden'
     weaselScratching.style.visibility = 'visible'
+
+    var legScratch = anime({
+        targets: '#scratch-leg',
+        rotate: [-5, 5],
+        translateX: [0, 5],
+        duration: 80,
+        easing: 'cubicBezier(0.475, 0.005, 1.000, 0.425)',
+        loop: true,
+        direction: 'alternate',
+    })
 }
 
-weaselLookBack()
+// weaselLookBack()
 // weaselScratch()
