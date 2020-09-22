@@ -3,13 +3,18 @@ const weaselForwardFace = window.document.querySelector("#weasel-forward-face")
 const weaselAltFace = window.document.querySelector("#weasel-alt-face")
 const weaselScratching = window.document.querySelector("#weasel-scratch")
 
-export function weaselLookBack() {
+function weaselLookForward() {
+    weaselAltFace.style.visibility = 'hidden'
+    weaselForwardFace.style.visibility = 'visible'
+    weaselScratching.style.visibility = 'hidden'
+}
+function weaselLookBack() {
     weaselAltFace.style.visibility = 'visible'
     weaselForwardFace.style.visibility = 'hidden'
     weaselScratching.style.visibility = 'hidden'
 }
 
-export function weaselScratch() {
+function weaselScratch() {
     weaselAltFace.style.visibility = 'hidden'
     weaselForwardFace.style.visibility = 'hidden'
     weaselScratching.style.visibility = 'visible'
@@ -25,5 +30,23 @@ export function weaselScratch() {
     })
 }
 
-// weaselLookBack()
-// weaselScratch()
+const looks = [
+    weaselLookBack,
+    weaselScratch,
+    weaselLookForward,
+]
+function weaselChange() {
+   let index = Math.round(Math.random() * 3)
+   let time = Math.round(Math.random() * 5000)
+    console.log(index, time)
+    setTimeout(() => {
+        let current = looks[index]
+        console.log({current})
+        if (current) {
+            current()
+        }        
+        weaselChange()
+    }, time)
+
+}
+weaselChange()
