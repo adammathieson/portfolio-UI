@@ -66,10 +66,8 @@ function weaselChange() {
    let time = Math.round(Math.random() * 2000)
     // console.log(index, time)
     setTimeout(() => {
-        let current = moves[index]
-        // console.log({current})
-        if (current) {
-            current()
+        if (moves[index]) {
+            moves[index].call()
         }        
         weaselChange()
     }, time)
