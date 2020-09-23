@@ -21,6 +21,7 @@ function weaselScratch() {
 
     var legScratch = anime({
         targets: '#scratch-leg',
+
         rotate: [-5, 5],
         translateX: [0, 5],
         duration: 80,
@@ -30,18 +31,44 @@ function weaselScratch() {
     })
 }
 
-const looks = [
+function weaselFootStomp() {
+    weaselAltFace.style.visibility = 'hidden'
+    weaselForwardFace.style.visibility = 'visible'
+    weaselScratching.style.visibility = 'hidden'
+    // anime.random(500, 2000)
+    var tlFootStomp = anime.timeline({
+        loop: true, 
+        direction: 'alternate', 
+        easing: 'linear',
+        duration: 200,
+        // repeat: () => anime.random(3, 9),
+        // repeatDelay: () => anime.random(500, 2000)
+    })
+        .add ({
+            targets: '#left-foot',
+            translateY: [0, -3],
+        })
+        .add ({
+            targets: '#right-foot',
+            translateY: [0, -3],
+        })
+}
+// weaselFootStomp()
+
+const moves = [
     weaselLookBack,
     weaselScratch,
     weaselLookForward,
+    weaselFootStomp,
 ]
+
 function weaselChange() {
-   let index = Math.round(Math.random() * 3)
-   let time = Math.round(Math.random() * 5000)
-    console.log(index, time)
+   let index = Math.round(Math.random() * moves.length)
+   let time = Math.round(Math.random() * 2000)
+    // console.log(index, time)
     setTimeout(() => {
-        let current = looks[index]
-        console.log({current})
+        let current = moves[index]
+        // console.log({current})
         if (current) {
             current()
         }        
