@@ -30,28 +30,27 @@ function weaselScratch() {
         direction: 'alternate',
     })
 }
+var tlFootStomp = anime.timeline({
+    loop: true, 
+    direction: 'alternate', 
+    easing: 'linear',
+    duration: 100,
+})
+    .add ({
+        targets: '#left-foot',
+        translateY: [0, -3],
+    })
+    .add ({
+        targets: '#right-foot',
+        translateY: [-3, 0],
+    })
 
 function weaselFootStomp() {
     weaselAltFace.style.visibility = 'hidden'
     weaselForwardFace.style.visibility = 'visible'
     weaselScratching.style.visibility = 'hidden'
-    // anime.random(500, 2000)
-    var tlFootStomp = anime.timeline({
-        loop: true, 
-        direction: 'alternate', 
-        easing: 'linear',
-        duration: 200,
-        // repeat: () => anime.random(3, 9),
-        // repeatDelay: () => anime.random(500, 2000)
-    })
-        .add ({
-            targets: '#left-foot',
-            translateY: [0, -3],
-        })
-        .add ({
-            targets: '#right-foot',
-            translateY: [0, -3],
-        })
+
+    tlFootStomp.restart()
 }
 // weaselFootStomp()
 
