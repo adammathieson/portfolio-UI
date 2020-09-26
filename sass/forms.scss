@@ -20,21 +20,22 @@
     }
     
     .form-header-content {
-        border: 1px solid white;
+        // border: 1px solid white;
         // flex: 0;
         display: flex;
         flex-direction: column;
         max-height: 60%;
         @media screen and (min-width: $tablet-width) {
-            justify-content: center;
+            justify-content: space-around;
             width: 50%;
+            height: 70%;
             
         }
 
         .title-box {
             display: flex;
             margin: 4rem 1rem 0 1rem;
-            border: 1px solid red;
+            // border: 1px solid red;
             justify-content: center;
     
             .left-title {
@@ -49,7 +50,7 @@
             }
         }
         .animation-box {
-            border: 1px solid orange;
+            // border: 1px solid orange;
             max-height: 40%;
             margin-top: 3rem;
 
@@ -69,7 +70,7 @@
     .contact-form-container {
         flex: 1;
         // display: none;
-        border: 1px solid yellow;
+        // border: 1px solid yellow;
         // height: 50%;
         // columns: 50%;
         @media screen and (min-width: $tablet-width) {
@@ -77,11 +78,13 @@
             // align-self: center;
         }
         .form-text-box {
-            border: 1px solid green;
+            // border: 1px solid green;
             margin-top: 3rem;
-
+            
             span p {
+                font-family: $secondary;
                 // border: 1px solid pink;
+                padding: 0;
                 text-align: center;
                 // display: none;
                 font-size: 2.5rem;
@@ -92,7 +95,7 @@
         form {
             // border: 1px solid pink;
             margin: auto;
-            max-width: 350px;
+            max-width: 400px;
             // height: 100%;
             display: flex;
             flex-direction: column;
@@ -100,6 +103,9 @@
 
             .form-field {
                 margin-top: 1.5rem;
+                font-family: $primary;
+                padding: 1rem;
+                text-decoration: none;
                 border: 0;
                 width: 100%;
                 height: 5vh;
@@ -112,13 +118,15 @@
             .submit-btn {
                 
                 button{
-                    margin-top: 3rem;
+                    margin: 3rem 0;
                     width: 100%;
                     padding: .75rem;
                     font-size: 2.5rem;
+                    font-family: $primary;
                     border-radius: 5px;
                     border: 0;
                     background: $submit-green;
+                    color: rgb(243, 242, 242);
                 }
             }
         }
