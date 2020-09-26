@@ -67,14 +67,13 @@ const moves = [
 function weaselChange() {
    let index = Math.round(Math.random() * moves.length)
    let time = Math.max(Math.round(Math.random() * 2000), 500)
-    console.log(index, time)
+    // console.log(index, time)
     setTimeout(() => {
         if (moves[index]) {
             moves[index].call()
         }        
         weaselChange()
     }, time)
-
 }
 
 weaselChange()
