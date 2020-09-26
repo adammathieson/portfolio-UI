@@ -7,17 +7,21 @@ function weaselLookForward() {
     weaselAltFace.style.visibility = 'hidden'
     weaselForwardFace.style.visibility = 'visible'
     weaselScratching.style.visibility = 'hidden'
+    tlFootStomp.pause()
 }
 function weaselLookBack() {
     weaselAltFace.style.visibility = 'visible'
     weaselForwardFace.style.visibility = 'hidden'
     weaselScratching.style.visibility = 'hidden'
+    tlFootStomp.pause()
+
 }
 
 function weaselScratch() {
     weaselAltFace.style.visibility = 'hidden'
     weaselForwardFace.style.visibility = 'hidden'
     weaselScratching.style.visibility = 'visible'
+    tlFootStomp.pause()
 
     var legScratch = anime({
         targets: '#scratch-leg',
@@ -49,10 +53,9 @@ function weaselFootStomp() {
     weaselAltFace.style.visibility = 'hidden'
     weaselForwardFace.style.visibility = 'visible'
     weaselScratching.style.visibility = 'hidden'
-
+    
     tlFootStomp.restart()
 }
-// weaselFootStomp()
 
 const moves = [
     weaselLookBack,
@@ -63,8 +66,8 @@ const moves = [
 
 function weaselChange() {
    let index = Math.round(Math.random() * moves.length)
-   let time = Math.round(Math.random() * 2000)
-    // console.log(index, time)
+   let time = Math.max(Math.round(Math.random() * 2000), 500)
+    console.log(index, time)
     setTimeout(() => {
         if (moves[index]) {
             moves[index].call()
@@ -73,4 +76,5 @@ function weaselChange() {
     }, time)
 
 }
+
 weaselChange()
