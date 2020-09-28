@@ -430,6 +430,12 @@ button {
   margin: 4rem 1rem 0 1rem;
   justify-content: center;
 }
+@media screen and (min-width: 730px) {
+  .form-body .form-header-content .title-box {
+    transform: rotate(-15deg) translate3d(0px, 0px, 0);
+    padding-right: 2rem;
+  }
+}
 .form-body .form-header-content .title-box .left-title {
   transform: rotate(-30deg) translate3d(20px, -20px, 0);
 }
