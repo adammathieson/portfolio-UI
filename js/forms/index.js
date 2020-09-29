@@ -1,1 +1,2 @@
-import './registration.js'
+import './validate.js'
+import './weasel-animations.js'

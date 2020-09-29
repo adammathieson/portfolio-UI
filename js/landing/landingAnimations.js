@@ -26,8 +26,8 @@ export function landingAnimations() {
         var deviceHeight = window.innerHeight
         landingContainer.setAttribute('height', String(deviceHeight))
         page.setAttribute('height', String(deviceHeight))
-        console.log('->>> ', landingContainer.clientHeight, landingContainer.getAttribute('height'), page.getAttribute('height'), {deviceHeight})
-        deviceWidth < mobileWidth ? console.log("curvedBgMobile") : console.log('curvedBg')
+        // console.log('->>> ', landingContainer.clientHeight, landingContainer.getAttribute('height'), page.getAttribute('height'), {deviceHeight})
+        // deviceWidth < mobileWidth ? console.log("curvedBgMobile") : console.log('curvedBg')
         return deviceWidth < mobileWidth ? curvedBgMobile : curvedBg
     }
     // setElementHeight()
