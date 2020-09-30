@@ -21,6 +21,6 @@ export const projects = [
         id: 'home-devices',
         images: ['https://media.giphy.com/media/f4gaKpjS7cr3OhKoJs/giphy.gif'],
         description: 'This product showcase app combines SVGs and the powerful GSAP animation library to bring together a narrative driven experience highlighting a full line of products with emphasis on home integration and IOT devices.',
-        icons: ['react-logo', 'green-sock-logo']
+        icons: ['react-logo', 'green-sock-logo', 'svg-logo']
     }
 ]
