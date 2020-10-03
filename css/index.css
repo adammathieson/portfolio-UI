@@ -125,7 +125,7 @@ button {
   position: absolute;
   z-index: 1;
   margin: 1% auto;
-  max-width: 500px;
+  max-width: 400px;
 }
 @media screen and (max-width: 450px) {
   .navbar {
@@ -161,11 +161,10 @@ button {
 .navbar nav a {
   text-decoration: none;
   color: #E1DCC1;
-  border: 1px solid #E1DCC1;
   border-radius: 50px;
   padding: 0.5em 1em;
   font-size: 2rem;
-  text-align: center;
+  text-align: flex-start;
   font-family: "Major Mono Display", monospace;
 }
 @supports (-webkit-touch-callout: none) {
@@ -179,8 +178,7 @@ button {
   }
 }
 .navbar nav a:hover {
-  background: #E1DCC1;
-  color: #1280a1;
+  color: #09f89c;
 }
 
 .landing-container {
