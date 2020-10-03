@@ -15,24 +15,24 @@ var page = document.querySelector('#landing-svg')
 var landingContainer = document.querySelector('.landing-container')
 let deviceWidth = window.innerWidth
 
-export function landingAnimations() {
+// export function landingAnimations() {
     // Set height of transition svg, bg element
-    function setBackgroundHeight() {
-        var curvedBg = "M0 0H1086.91C1086.91 0 1261.61 178.138 907.481 530.245C627.731 808.399 775.72 1000 775.72 1000H0V0Z"
-        var curvedBgMobile = "M0 0H824.265C824.265 0 1228.7 207.512 824.265 540.025C485.813 818.285 1121 1000 1121 1000H0V0Z"
-        deviceWidth = window.innerWidth
-        var deviceHeight = window.innerHeight
-        landingContainer.setAttribute('height', String(deviceHeight))
-        page.setAttribute('height', String(deviceHeight))
+export function setBackgroundHeight() {
+    var curvedBg = "M0 0H1086.91C1086.91 0 1261.61 178.138 907.481 530.245C627.731 808.399 775.72 1000 775.72 1000H0V0Z"
+    var curvedBgMobile = "M0 0H824.265C824.265 0 1228.7 207.512 824.265 540.025C485.813 818.285 1121 1000 1121 1000H0V0Z"
+    deviceWidth = window.innerWidth
+    var deviceHeight = window.innerHeight
+    landingContainer.setAttribute('height', String(deviceHeight))
+    page.setAttribute('height', String(deviceHeight))
 
-        return deviceWidth < mobileWidth ? curvedBgMobile : curvedBg
-    }
+    return deviceWidth < mobileWidth ? curvedBgMobile : curvedBg
+}
     
     var tabletWidth = 620
     var mobileWidth = 450
     
     // Main landing timeline
-    var tlLandMain = anime.timeline({
+    export var tlLandMain = anime.timeline({
         // duration: 3000,
     })
     
@@ -58,11 +58,11 @@ export function landingAnimations() {
     
     
 
-    var tlTitleReveal = anime.timeline({
+    export var tlTitleReveal = anime.timeline({
         duration: 4000,
         loop: true,
         repeatDelay: 4000,
-        // direction: 'alternate',
+        direction: 'alternate',
         // repeat: -1
     })
       // first name pop up
@@ -108,12 +108,14 @@ export function landingAnimations() {
     .add({
         targets: [ ...webChars],
         translateX: [0, 30],
+        translateY: [0, -30],
         easing: 'linear',
         duration: 800,
     })
     .add({
         targets: [ ...developerChars],
         translateX: [0, -30],
+        translateY: [0, 30],
         easing: 'linear',
         duration: 800,
     }, '-=800')
@@ -123,7 +125,13 @@ export function landingAnimations() {
         easing: 'linear',
         duration: 600,
     }, '-=400')
+    .add({
+        targets: [ ...webChars, ...developerChars],
+        opacity: 0,
+        duration: 1000,
+    })
 
-    return tlLandMain
 
-}
+    // return tlLandMain
+
+// }
