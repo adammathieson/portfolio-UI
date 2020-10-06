@@ -209,6 +209,7 @@ button {
   width: 50%;
   margin-left: 3em;
   max-width: 632px;
+  overflow: visible;
 }
 @media screen and (min-width: 450px) {
   .landing-container #title-svg {

@@ -1,14 +1,14 @@
-import { landingAnimations } from './landingAnimations.js'
+import { tlLandMain, tlTitleReveal, setBackgroundHeight } from './landingAnimations.js'
 // Replay animation on resize
 
 // window.resize event listener
 var delay = 500
 var throttled = false
-window.addEventListener('resize', function() {
+window.addEventListener('resize', async function() {
     if (!throttled) {
-        tlLanding.reset()
-        tlLanding.restart()
-        // landingAnimations()
+        setBackgroundHeight()
+        tlLandMain.reset()
+        tlLandMain.restart()
 
         throttled = false
       // set a timeout to un-throttle
@@ -25,9 +25,9 @@ window.addEventListener('resize', () => {
 })
 
 function doneResizing() {
-    tlLanding.reset()
-    tlLanding.restart()
+    tlLandMain.reset()
+    tlLandMain.restart()
     landingAnimations()
 }
 
-let tlLanding = landingAnimations()
+// let tlLanding = landingAnimations()
