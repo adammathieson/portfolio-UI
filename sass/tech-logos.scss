@@ -9,7 +9,8 @@
 #node-4,
 #edge-1,
 #edge-2,
-#edge-3
+#edge-3,
+#moment-logo
 {
     opacity: 0;
 }
@@ -24,12 +25,16 @@
         overflow: visible;
     }
 }
+#react-1, #react-2, #react-3 {
+    transform-origin: 50% 50%;
+    // visibility: hidden;
+}
+#second, #minute{
+    transform-origin: 49% 32%;
+}
 #material-ui-logo
 {
     scale: .80;
 }
 
-#react-1, #react-2, #react-3 {
-    transform-origin: 50% 50%;
-    // visibility: hidden;
-}
+
