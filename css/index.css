@@ -391,8 +391,16 @@ button {
   scale: 0.75;
 }
 
+#react-logo svg {
+  overflow: visible;
+}
+
 #material-ui-logo {
   scale: 0.8;
+}
+
+#react-1, #react-2, #react-3 {
+  transform-origin: 50% 50%;
 }
 
 #scratch-leg {

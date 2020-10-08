@@ -19,7 +19,17 @@
 {
     scale: .75;
 }
+#react-logo {
+    svg {
+        overflow: visible;
+    }
+}
 #material-ui-logo
 {
     scale: .80;
+}
+
+#react-1, #react-2, #react-3 {
+    transform-origin: 50% 50%;
+    // visibility: hidden;
 }

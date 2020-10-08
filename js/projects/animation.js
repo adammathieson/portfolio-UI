@@ -57,9 +57,28 @@ export function animations() {
         easing: 'easeInOutCubic',
     })
 
+    var react1 = anime({
+        targets: '#react-1',
+        rotate: [-60, 0],
+        delay: 1000,
+        duration: 2000,
+    })
+    var react2 = anime({
+        targets: '#react-2',
+        rotate: [-120, 0],
+        delay: 1000,
+        duration: 2000,
+    })
+    var react3 = anime({
+        targets: '#react-3',
+        rotate: [-180, 0],
+        delay: 1000,
+        duration: 2000,
+    })
+
     var reactLogo = anime({
         targets: '#react-logo',
-        rotate: [0, 360],
+        rotate: [0, 720],
         duration: 1000,
         easing: 'linear'
     })
