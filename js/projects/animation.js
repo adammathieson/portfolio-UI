@@ -88,10 +88,10 @@ export function animations() {
 
     var reduxLogoTitle = anime({
         targets: '#Redux',
-        // translateX: [10, 0],
+        translateY: [10, 0],
         opacity: [0,1],
-        duration: 400,
-        delay: 800,
+        duration: 600,
+        delay: 900,
         easing: 'linear'
     })
 

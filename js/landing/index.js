@@ -25,9 +25,10 @@ window.addEventListener('resize', () => {
 })
 
 function doneResizing() {
+    setBackgroundHeight()
     tlLandMain.reset()
     tlLandMain.restart()
-    landingAnimations()
+    // landingAnimations()
 }
 
 // let tlLanding = landingAnimations()
