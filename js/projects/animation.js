@@ -167,6 +167,29 @@ export function animations() {
         // duration: 1000,
     }, '-=650')
 
+    var tlKnex = anime.timeline({
+    })
+    .add({
+        targets: '#spokes',
+        rotate: [0, -1080],
+        duration: 2000,
+        easing: 'linear',
+    })
+    .add({
+        targets: '#knex-logo svg',
+        translateX: [70, 0],
+        duration: 1500,
+        easing: 'easeInCubic',
+    }, '-=2000')
+    .add({
+        targets: '#KNEXJS',
+        opacity: [0,1],
+        translateX: [-20, 0],
+        // translateY: [3, 0],
+        easing: 'linear',
+        duration: 300,
+    }, '-=300')
+
     var tlNode = anime.timeline({
     })
         .add ({
@@ -212,9 +235,6 @@ export function animations() {
             opacity: [0,1],
             translateY: [5, 0],
         }, '-=1500')
-        // tlNode.restart()
-
-
 
 }
 

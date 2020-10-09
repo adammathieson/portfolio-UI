@@ -8,8 +8,8 @@ export const projects = [
             
         ],
         description: 'Looking to take on more responsibility? Water My Plants makes planning and caring for your home and office flora a breeze. This application uses Node backend support to send watering and care instruction reminders for all types of plants. A gorgeous user interface and image selection API will get your home screen looking like a page out of Home and Garden. Create healthy habits and you\'ll be ready for a dog in no time!',
-        // icons: ['postgres-logo'],
-        icons: ['react-logo', 'redux-logo', 'nodejs-logo', 'material-ui-logo', 'moment-logo'],
+        // icons: ['knex-logo'],
+        icons: ['react-logo', 'redux-logo', 'nodejs-logo', 'material-ui-logo', 'moment-logo', 'knex-logo'],
     },
     {
         id: 'endrsd',   
