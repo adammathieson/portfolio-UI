@@ -383,7 +383,9 @@ button {
 #edge-1,
 #edge-2,
 #edge-3,
-#moment-logo {
+#moment-logo,
+#Postgre,
+#SQL {
   opacity: 0;
 }
 
@@ -392,7 +394,7 @@ button {
   scale: 0.75;
 }
 
-#react-logo svg {
+#react-logo svg, #postgres-logo svg {
   overflow: visible;
 }
 
@@ -406,6 +408,10 @@ button {
 
 #material-ui-logo {
   scale: 0.8;
+}
+
+#postgres-elephant {
+  transform-origin: 20% 50%;
 }
 
 #scratch-leg {

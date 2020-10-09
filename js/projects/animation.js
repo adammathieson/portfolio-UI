@@ -96,7 +96,7 @@ export function animations() {
 
     var reduxLogo = anime({
         targets: '#Vector path',
-        fill: "#764ABC",
+        fill: ["none", "#764ABC"],
         //  opacity: [0,1],
         easing: 'easeInOutSine',
         duration: 1500,
@@ -110,14 +110,14 @@ export function animations() {
         translateY: [10, 0],
         opacity: [0,1],
         duration: 600,
-        delay: 900,
+        delay: 1300,
         easing: 'linear'
     })
 
     var materialUiLogo = anime({
         targets: '#material-ui-logo svg',
         scaleX: [-1, 1],
-        duration: 1000,
+        duration: 2000,
         easing: 'linear'
     })
 
@@ -136,6 +136,7 @@ export function animations() {
         // loop: true,
         easing: 'linear'
     })
+
     var momentMin = anime({
         targets: '#minute',
         rotate: [-60, 0],
@@ -144,6 +145,27 @@ export function animations() {
         // loop: true,
         easing: 'linear'
     })
+
+    var tlPostgres = anime.timeline({
+    })
+    .add({
+        targets: '#postgres-elephant',
+        rotate: [0, -15, 0, -15, 0],
+        duration: 2000,
+        loop: 2,
+    })
+    .add({
+        targets: '#Postgre',
+        translateX: [10, 0],
+        opacity: [0, 1],
+        duration: 600,
+    })
+    .add({
+        targets: '#SQL',
+        translateX: [-10, 0],
+        opacity: [0, 1],
+        // duration: 1000,
+    }, '-=650')
 
     var tlNode = anime.timeline({
     })
@@ -191,6 +213,9 @@ export function animations() {
             translateY: [5, 0],
         }, '-=1500')
         // tlNode.restart()
+
+
+
 }
 
 

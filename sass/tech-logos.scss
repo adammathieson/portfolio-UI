@@ -10,7 +10,9 @@
 #edge-1,
 #edge-2,
 #edge-3,
-#moment-logo
+#moment-logo,
+#Postgre,
+#SQL
 {
     opacity: 0;
 }
@@ -20,7 +22,7 @@
 {
     scale: .75;
 }
-#react-logo {
+#react-logo, #postgres-logo {
     svg {
         overflow: visible;
     }
@@ -35,6 +37,9 @@
 #material-ui-logo
 {
     scale: .80;
+}
+#postgres-elephant {
+    transform-origin: 20% 50%;
 }
 
 
