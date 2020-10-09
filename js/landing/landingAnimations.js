@@ -59,7 +59,7 @@ export function setBackgroundHeight() {
     
 
     export var tlTitleReveal = anime.timeline({
-        duration: 4000,
+        // duration: 4000,
         loop: true,
         repeatDelay: 4000,
         direction: 'alternate',
@@ -88,7 +88,7 @@ export function setBackgroundHeight() {
         targets: [ ...adamChars, ...mathiesonChars ],
         opacity: 0,
         easing: 'linear',
-        duration: 700,
+        duration: 500,
         // repeat: 10,
         // direction: 'alternate',
         delay: anime.stagger(250),
@@ -100,35 +100,35 @@ export function setBackgroundHeight() {
         targets: [ ...webChars, ...developerChars],
         opacity: 1,
         easing: 'linear',
-        duration: 700,
+        duration: 500,
         // direction: 'alternate',
         delay: anime.stagger(250),
         loop: true,
-    }, '-=2500')
+    }, '-=3000')
     .add({
         targets: [ ...webChars],
         translateX: [0, 30],
         translateY: [0, -30],
         easing: 'linear',
-        duration: 800,
+        duration: 6000,
     })
     .add({
         targets: [ ...developerChars],
         translateX: [0, -30],
         translateY: [0, 30],
         easing: 'linear',
-        duration: 800,
-    }, '-=800')
+        duration: 6000,
+    }, '-=6000')
     .add({
         targets: [ ...webChars, ...developerChars],
         opacity: [1, 0],
         easing: 'linear',
-        duration: 600,
+        duration: 2000,
     }, '-=400')
     .add({
         targets: [ ...webChars, ...developerChars],
         opacity: 0,
-        duration: 1000,
+        duration: 2000,
     })
 
 
