@@ -402,7 +402,7 @@ button {
   overflow: visible;
 }
 
-#react-1, #react-2, #react-3, #hero-bg-circle {
+#react-1, #react-2, #react-3, #hero-bg-circle, #svg-vector {
   transform-origin: 50% 50%;
 }
 
