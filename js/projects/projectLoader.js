@@ -16,11 +16,11 @@ export const projectLoader = () => {
         logos.forEach(logo => logo.style.display = 'none')
     }
 
-    let iconWidth = Math.floor((1 / project.icons.length) * 100)
+    // let iconWidth = Math.floor((1 / project.icons.length) * 100)
     logos.forEach(logo => {
         if (project.icons.includes(logo.id)) {
             logo.style.display = 'block'
-            logo.style.width = String(iconWidth) + '%'
+            // logo.style.width = String(iconWidth) + '%'
         } 
     })
 
@@ -34,7 +34,7 @@ export const projectLoader = () => {
         }
     }
 
-    // inset new images
+    // insert new images
     project.images.forEach(url => {
         const img = document.createElement('img')
         img.src = url
@@ -62,6 +62,7 @@ nextBtn.addEventListener('click', () => {
         current++
         // console.log(current)
     }
+    // animations()
     projectLoader()
     animations()
 })

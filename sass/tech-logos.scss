@@ -9,7 +9,19 @@
 #node-4,
 #edge-1,
 #edge-2,
-#edge-3
+#edge-3,
+#moment-logo,
+#Postgre,
+#SQL,
+#KNEXJS,
+#hero-bg-circle,
+#Sock,
+#Green,
+#figma-red,
+#figma-orange,
+#figma-purple,
+#figma-blue,
+#figma-green
 {
     opacity: 0;
 }
@@ -19,7 +31,29 @@
 {
     scale: .75;
 }
+#react-logo, #postgres-logo {
+    svg {
+        overflow: visible;
+    }
+}
+#react-1, #react-2, #react-3, #hero-bg-circle, #svg-vector {
+    transform-origin: 50% 50%;
+    // visibility: hidden;
+}
+#second, #minute{
+    transform-origin: 49% 32%;
+}
 #material-ui-logo
 {
     scale: .80;
 }
+#postgres-elephant {
+    transform-origin: 20% 50%;
+}
+#spokes {
+    transform-origin: 14% 50%;
+}
+
+
+
+

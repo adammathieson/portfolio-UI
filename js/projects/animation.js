@@ -57,9 +57,28 @@ export function animations() {
         easing: 'easeInOutCubic',
     })
 
+    var react1 = anime({
+        targets: '#react-1',
+        rotate: [-60, 0],
+        delay: 1000,
+        duration: 2000,
+    })
+    var react2 = anime({
+        targets: '#react-2',
+        rotate: [-120, 0],
+        delay: 1000,
+        duration: 2000,
+    })
+    var react3 = anime({
+        targets: '#react-3',
+        rotate: [-180, 0],
+        delay: 1000,
+        duration: 2000,
+    })
+
     var reactLogo = anime({
         targets: '#react-logo',
-        rotate: [0, 360],
+        rotate: [0, 720],
         duration: 1000,
         easing: 'linear'
     })
@@ -77,7 +96,7 @@ export function animations() {
 
     var reduxLogo = anime({
         targets: '#Vector path',
-        fill: "#764ABC",
+        fill: ["none", "#764ABC"],
         //  opacity: [0,1],
         easing: 'easeInOutSine',
         duration: 1500,
@@ -88,26 +107,116 @@ export function animations() {
 
     var reduxLogoTitle = anime({
         targets: '#Redux',
-        // translateX: [10, 0],
+        translateY: [10, 0],
         opacity: [0,1],
-        duration: 400,
-        delay: 800,
+        duration: 600,
+        delay: 1300,
         easing: 'linear'
     })
 
     var materialUiLogo = anime({
         targets: '#material-ui-logo svg',
         scaleX: [-1, 1],
-        duration: 1000,
+        duration: 2000,
         easing: 'linear'
     })
 
     var momentLogo = anime({
-        targets: '#moment-logo svg',
-        scaleY: [0, 1],
-        duration: 1000,
+        targets: '#moment-logo',
+        opacity: [0, 1],
+        duration: 2000,
         easing: 'linear'
     })
+    
+    var momentSec = anime({
+        targets: '#second',
+        rotate: [-360, 0],
+        // delay: 500,
+        duration: 3000,
+        // loop: true,
+        easing: 'linear'
+    })
+
+    var momentMin = anime({
+        targets: '#minute',
+        rotate: [-60, 0],
+        // delay: 500,
+        duration: 3000,
+        // loop: true,
+        easing: 'linear'
+    })
+
+    var tlPostgres = anime.timeline({
+    })
+    .add({
+        targets: '#postgres-elephant',
+        rotate: [0, -15, 0, -15, 0],
+        duration: 2000,
+        loop: 2,
+    })
+    .add({
+        targets: '#Postgre',
+        translateX: [10, 0],
+        opacity: [0, 1],
+        duration: 600,
+    })
+    .add({
+        targets: '#SQL',
+        translateX: [-10, 0],
+        opacity: [0, 1],
+        // duration: 1000,
+    }, '-=650')
+
+    var tlGreenSock = anime.timeline({
+    })
+    .add({
+        targets: '#hero-logo',
+        translateX: [-30, 0],
+        scale: [0, 1],
+        duration: 2000,
+    })
+    .add({
+        targets: '#Green',
+        translateY: [10, 0],
+        opacity: [0, 1],
+        duration: 1000,
+    }, '-=1000')
+    .add({
+        targets: '#Sock',
+        translateY: [-10, 0],
+        opacity: [0, 1],
+        duration: 1000,
+    }, '-=1000')
+    .add({
+        targets: '#hero-bg-circle',
+        opacity: [0, 1],
+        scale: [0,1.3,1],
+        duration: 300,
+        easing: 'linear'
+    }, '-=300')
+
+    var tlKnex = anime.timeline({
+    })
+    .add({
+        targets: '#spokes',
+        rotate: [0, -1080],
+        duration: 2000,
+        easing: 'linear',
+    })
+    .add({
+        targets: '#knex-logo svg',
+        translateX: [70, 0],
+        duration: 1500,
+        easing: 'easeInCubic',
+    }, '-=2000')
+    .add({
+        targets: '#KNEXJS',
+        opacity: [0,1],
+        translateX: [-20, 0],
+        // translateY: [3, 0],
+        easing: 'linear',
+        duration: 300,
+    }, '-=300')
 
     var tlNode = anime.timeline({
     })
@@ -154,7 +263,158 @@ export function animations() {
             opacity: [0,1],
             translateY: [5, 0],
         }, '-=1500')
-        // tlNode.restart()
+
+    var tlSvgLogo = anime.timeline({
+    })
+    .add({
+        targets: '#svg-vector',
+        rotate: [720, 0],
+        duration: 3000,
+        easing: 'linear',
+    })
+    .add({
+        targets: ['#S-svg', '#V-svg', '#G-svg'],
+        translateY: [70, 0],
+        duration: 1800,
+        easing: 'linear',
+        delay: anime.stagger(600),
+    }, '-=3000')
+
+    var tlFigGreen = anime.timeline({
+    })
+    .add({
+        delay: 200,
+        targets: '#figma-green-sq',
+        translateX: [0, -98],
+        duration: 300,
+        easing: 'linear'
+    })
+    .add({
+        targets: '#figma-green-sq',
+        translateY: [0, -28],
+        duration: 300,
+        easing: 'linear'
+    })
+    .add({
+        targets: '#figma-green-sq',
+        opacity: [1,0],
+        duration: 100,
+    })
+    .add({
+        targets: '#figma-green',
+        opacity: [0,1],
+        duration: 100
+
+    })
+
+    var tlFigPurple = anime.timeline({
+    })
+    .add({
+        delay: 400,
+        targets: '#figma-purple-sq',
+        translateX: [0, -136],
+        duration: 300,
+        easing: 'linear'
+    })
+    .add({
+        targets: '#figma-purple-sq',
+        translateY: [0, -56],
+        duration: 300,
+        easing: 'linear'
+    })
+    .add({
+        targets: '#figma-purple-sq',
+        opacity: [1,0],
+        duration: 100,
+    })
+    .add({
+        targets: '#figma-purple',
+        opacity: [0,1],
+        duration: 100
+
+    })
+
+    var tlFigRed = anime.timeline({
+    })
+    .add({
+        delay: 600,
+        targets: '#figma-red-sq',
+        translateX: [0, -175],
+        duration: 300,
+        easing: 'linear'
+    })
+    .add({
+        targets: '#figma-red-sq',
+        translateY: [0, -80],
+        duration: 300,
+        easing: 'linear'
+    })
+    .add({
+        targets: '#figma-red-sq',
+        opacity: [1,0],
+        duration: 100,
+    })
+    .add({
+        targets: '#figma-red',
+        opacity: [0,1],
+        duration: 100
+
+    })
+
+    var tlFigOrange = anime.timeline({
+    })
+    .add({
+        delay: 800,
+        targets: '#figma-orange-sq',
+        translateX: [0, -182],
+        duration: 300,
+        easing: 'linear'
+    })
+    .add({
+        targets: '#figma-orange-sq',
+        translateY: [0, -80],
+        duration: 300,
+        easing: 'linear'
+    })
+    .add({
+        targets: '#figma-orange-sq',
+        opacity: [1,0],
+        duration: 100,
+    })
+    .add({
+        targets: '#figma-orange',
+        opacity: [0,1],
+        duration: 100
+
+    })
+
+    var tlFigBlue = anime.timeline({
+    })
+    .add({
+        delay: 1000,
+        targets: '#figma-blue-sq',
+        translateX: [0, -220],
+        duration: 300,
+        easing: 'linear'
+    })
+    .add({
+        targets: '#figma-blue-sq',
+        translateY: [0, -56],
+        duration: 300,
+        easing: 'linear'
+    })
+    .add({
+        targets: '#figma-blue-sq',
+        opacity: [1,0],
+        duration: 100,
+    })
+    .add({
+        targets: '#figma-blue',
+        opacity: [0,1],
+        duration: 100
+    })
+
+
 }
 
 
