@@ -2,7 +2,6 @@
 export function animations() {
     var logosContainer = window.document.querySelectorAll('.tech-logo div')
     var images = window.document.querySelectorAll('.image-container img')
-    // console.log({images})
     
     var genericTitleSlide = anime({
         targets: '.title-container',

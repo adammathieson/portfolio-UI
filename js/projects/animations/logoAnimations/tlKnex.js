@@ -7,9 +7,9 @@ export const tl_knexLogo = anime.timeline({
     easing: 'linear',
 })
 .add({
-    targets: '#knex-logo svg',
+    targets: '#knexLogo svg',
     translateX: [70, 0],
-    duration: 1500,
+    duration: 2000,
     easing: 'easeInCubic',
 }, '-=2000')
 .add({
@@ -19,4 +19,4 @@ export const tl_knexLogo = anime.timeline({
     // translateY: [3, 0],
     easing: 'linear',
     duration: 300,
-}, '-=300')
+})
