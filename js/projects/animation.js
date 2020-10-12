@@ -122,7 +122,7 @@ export function animations() {
     })
 
     var momentLogo = anime({
-        targets: '#moment-logo',
+        targets: '#momentLogo',
         opacity: [0, 1],
         duration: 2000,
         easing: 'linear'
