@@ -57,63 +57,6 @@ export function animations() {
         easing: 'easeInOutCubic',
     })
 
-    var react1 = anime({
-        targets: '#react-1',
-        rotate: [-60, 0],
-        delay: 1000,
-        duration: 2000,
-    })
-    var react2 = anime({
-        targets: '#react-2',
-        rotate: [-120, 0],
-        delay: 1000,
-        duration: 2000,
-    })
-    var react3 = anime({
-        targets: '#react-3',
-        rotate: [-180, 0],
-        delay: 1000,
-        duration: 2000,
-    })
-
-    var reactLogo = anime({
-        targets: '#react-logo',
-        rotate: [0, 720],
-        duration: 1000,
-        easing: 'linear'
-    })
-
-    var reduxLogo = anime({
-        targets: '#Vector path',
-        strokeDashoffset: [anime.setDashoffset, 0],
-        //  opacity: [0,1],
-        easing: 'easeInOutSine',
-        duration: 1000,
-        delay: function(el, i) { return i * 250 },
-        // direction: 'alternate',
-        //  loop: true
-    })
-
-    var reduxLogo = anime({
-        targets: '#Vector path',
-        fill: ["none", "#764ABC"],
-        //  opacity: [0,1],
-        easing: 'easeInOutSine',
-        duration: 1500,
-        delay: 1000,
-        // direction: 'alternate',
-        //  loop: true
-    })
-
-    var reduxLogoTitle = anime({
-        targets: '#Redux',
-        translateY: [10, 0],
-        opacity: [0,1],
-        duration: 600,
-        delay: 1300,
-        easing: 'linear'
-    })
-
     var materialUiLogo = anime({
         targets: '#materialUiLogo svg',
         scaleX: [-1, 1],
