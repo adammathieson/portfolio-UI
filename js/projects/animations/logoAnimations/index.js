@@ -1,3 +1,4 @@
+import { tl_nodejsLogo } from './tlNode.js'
 import { 
     tlFigGreen, 
     tlFigPurple,
@@ -14,3 +15,7 @@ export const figmaTls = [
     tlFigOrange,
     tlFigBlue,
 ]
+
+export {
+    tl_nodejsLogo
+}
