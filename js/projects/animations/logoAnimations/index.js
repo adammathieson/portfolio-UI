@@ -5,6 +5,7 @@ import { tl_greenSockLogo } from './tlGreenSock.js'
 import { tl_postgresLogo } from './tlPostgres.js'
 import { tl_reactLogo } from './tlReact.js'
 import { tl_reduxLogo } from './tlRedux.js'
+import { tl_momentLogo } from './tlMoment.js'
 import { 
     tlFigGreen, 
     tlFigPurple,
@@ -21,6 +22,7 @@ export const figmaTls = [
     tlFigOrange,
     tlFigBlue,
     tl_reduxLogo,
+    tl_momentLogo,
 ]
 
 export {
@@ -31,4 +33,5 @@ export {
     tl_postgresLogo,
     tl_reactLogo,
     tl_reduxLogo,
+    tl_momentLogo,
 }

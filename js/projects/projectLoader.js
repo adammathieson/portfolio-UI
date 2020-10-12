@@ -8,6 +8,7 @@ import {
     tl_greenSockLogo,
     tl_postgresLogo,
     tl_reactLogo,
+    tl_momentLogo,
 } from './animations/logoAnimations/index.js'
 
 // timelines to reset
@@ -19,6 +20,7 @@ const tls = [
     tl_greenSockLogo,
     tl_postgresLogo,
     tl_reactLogo,
+    tl_momentLogo,
 ]
 
 let current = 0 

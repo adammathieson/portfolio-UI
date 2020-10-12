@@ -63,32 +63,6 @@ export function animations() {
         duration: 2000,
         easing: 'linear'
     })
-
-    var momentLogo = anime({
-        targets: '#momentLogo',
-        opacity: [0, 1],
-        duration: 2000,
-        easing: 'linear'
-    })
-    
-    var momentSec = anime({
-        targets: '#second',
-        rotate: [-360, 0],
-        // delay: 500,
-        duration: 3000,
-        // loop: true,
-        easing: 'linear'
-    })
-
-    var momentMin = anime({
-        targets: '#minute',
-        rotate: [-60, 0],
-        // delay: 500,
-        duration: 3000,
-        // loop: true,
-        easing: 'linear'
-    })
-
 }
 
 
