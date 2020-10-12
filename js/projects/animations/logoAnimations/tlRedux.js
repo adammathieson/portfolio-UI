@@ -15,8 +15,8 @@ export const tl_reduxLogo = anime.timeline({
 }, '-=200')
 .add({
     targets: '#Redux',
-    translateY: [10, 0],
+    translateY: [5, 0],
     opacity: [0,1],
-    duration: 600,
+    duration: 400,
     easing: 'linear'
 })

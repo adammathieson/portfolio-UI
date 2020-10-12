@@ -56,13 +56,6 @@ export function animations() {
         opacity: [0,1],
         easing: 'easeInOutCubic',
     })
-
-    var materialUiLogo = anime({
-        targets: '#materialUiLogo svg',
-        scaleX: [-1, 1],
-        duration: 2000,
-        easing: 'linear'
-    })
 }
 
 

@@ -14,6 +14,7 @@ import {
     tlFigBlue,
 
 } from './tlFigma.js'
+import { tl_materialUiLogo } from './tlMaterialUi.js'
 
 export const figmaTls = [
     tlFigGreen,
@@ -23,6 +24,7 @@ export const figmaTls = [
     tlFigBlue,
     tl_reduxLogo,
     tl_momentLogo,
+    tl_materialUiLogo,
 ]
 
 export {
@@ -34,4 +36,5 @@ export {
     tl_reactLogo,
     tl_reduxLogo,
     tl_momentLogo,
+    tl_materialUiLogo,
 }
