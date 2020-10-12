@@ -1,9 +1,15 @@
 import {projects} from './projects.js'
 import {animations} from './animation.js'
-import { figmaTls, tl_nodejsLogo, tl_svgLogo } from './animations/logoAnimations/index.js'
+import { figmaTls, tl_nodejsLogo, tl_svgLogo, tl_knexLogo, tl_greenSockLogo } from './animations/logoAnimations/index.js'
 
 // timelines to reset
-const tls = [...figmaTls, tl_nodejsLogo, tl_svgLogo]
+const tls = [
+    ...figmaTls,
+    tl_nodejsLogo,
+    tl_svgLogo,
+    tl_knexLogo,
+    tl_greenSockLogo
+]
 
 let current = 0 
 export const projectLoader = () => {

@@ -237,7 +237,6 @@ button {
 .projects {
   background-color: #BCD3DB;
   height: 100vh;
-  min-height: 670px;
 }
 .projects #project-container {
   margin: 0 auto;

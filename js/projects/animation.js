@@ -167,58 +167,6 @@ export function animations() {
         // duration: 1000,
     }, '-=650')
 
-    var tl_greenSockLogo = anime.timeline({
-    })
-    .add({
-        targets: '#hero-logo',
-        translateX: [-30, 0],
-        scale: [0, 1],
-        duration: 2000,
-    })
-    .add({
-        targets: '#Green',
-        translateY: [10, 0],
-        opacity: [0, 1],
-        duration: 1000,
-    }, '-=1000')
-    .add({
-        targets: '#Sock',
-        translateY: [-10, 0],
-        opacity: [0, 1],
-        duration: 1000,
-    }, '-=1000')
-    .add({
-        targets: '#hero-bg-circle',
-        opacity: [0, 1],
-        scale: [0,1.3,1],
-        duration: 300,
-        easing: 'linear'
-    }, '-=300')
-
-    var tl_KnexLogo = anime.timeline({
-    })
-    .add({
-        targets: '#spokes',
-        rotate: [0, -1080],
-        duration: 2000,
-        easing: 'linear',
-    })
-    .add({
-        targets: '#knex-logo svg',
-        translateX: [70, 0],
-        duration: 1500,
-        easing: 'easeInCubic',
-    }, '-=2000')
-    .add({
-        targets: '#KNEXJS',
-        opacity: [0,1],
-        translateX: [-20, 0],
-        // translateY: [3, 0],
-        easing: 'linear',
-        duration: 300,
-    }, '-=300')
-
-
 }
 
 

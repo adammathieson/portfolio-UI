@@ -1,5 +1,7 @@
 import { tl_nodejsLogo } from './tlNode.js'
 import { tl_svgLogo } from './tlSvg.js'
+import { tl_knexLogo } from './tlKnex.js'
+import { tl_greenSockLogo } from './tlGreenSock.js'
 import { 
     tlFigGreen, 
     tlFigPurple,
@@ -19,5 +21,7 @@ export const figmaTls = [
 
 export {
     tl_nodejsLogo,
-    tl_svgLogo
+    tl_svgLogo,
+    tl_knexLogo,
+    tl_greenSockLogo
 }
