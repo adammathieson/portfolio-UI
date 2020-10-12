@@ -43,11 +43,11 @@ export const projectLoader = () => {
         tls.forEach(el => el.reset())
     }
 
-    // let iconWidth = Math.floor((1 / project.icons.length) * 100)
+    let iconWidth = Math.floor((1 / project.icons.length) * 100)
     logos.forEach(logo => {
         if (project.icons.includes(logo.id)) {
             logo.style.display = 'block'
-            // logo.style.width = String(iconWidth) + '%'
+            logo.style.width = String(iconWidth) + '%'
         } 
     })
     tls.forEach(el => el.play())
