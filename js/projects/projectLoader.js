@@ -1,11 +1,10 @@
 import {projects} from './projects.js'
 import {animations} from './animation.js'
-import { tl_figmaLogo } from './animations/logoAnimations/index.js'
+import { figmaTls } from './animations/logoAnimations/index.js'
 
+// timelines to reset
+const tls = [...figmaTls]
 
-const tls = [tl_figmaLogo]
-
-    
 let current = 0 
 export const projectLoader = () => {
     let project = projects[current]
@@ -20,12 +19,8 @@ export const projectLoader = () => {
     if (logos.length) {
         logos.forEach(logo => {
             logo.style.display = 'none'
-            // let tl = 'tl_' + `${logo.id}`
-            // console.log(tl)
         })
-        tls.forEach(el => (el.reset(), el.play()))
-        console.log(tl_figmaLogo)
-
+        tls.forEach(el => el.reset())
     }
 
     // let iconWidth = Math.floor((1 / project.icons.length) * 100)
@@ -35,6 +30,7 @@ export const projectLoader = () => {
             // logo.style.width = String(iconWidth) + '%'
         } 
     })
+    tls.forEach(el => el.play())
 
     // Set image container width
     let imgWidth = Math.floor((1 / project.images.length) * 100)

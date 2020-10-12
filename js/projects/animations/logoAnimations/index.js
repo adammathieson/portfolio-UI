@@ -1,5 +1,16 @@
-import { tl_figmaLogo } from './tlFigma.js'
+import { 
+    tlFigGreen, 
+    tlFigPurple,
+    tlFigRed,
+    tlFigOrange,
+    tlFigBlue,
 
-export {
-    tl_figmaLogo
-}
+} from './tlFigma.js'
+
+export const figmaTls = [
+    tlFigGreen,
+    tlFigPurple,
+    tlFigRed,
+    tlFigOrange,
+    tlFigBlue,
+]

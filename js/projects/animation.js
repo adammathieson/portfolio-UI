@@ -115,7 +115,7 @@ export function animations() {
     })
 
     var materialUiLogo = anime({
-        targets: '#material-ui-logo svg',
+        targets: '#materialUiLogo svg',
         scaleX: [-1, 1],
         duration: 2000,
         easing: 'linear'

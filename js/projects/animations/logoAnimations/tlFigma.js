@@ -1,9 +1,4 @@
-export const tl_figmaLogo = anime.timeline({
-    delay: 500,
-    begin: () => {
-        console.log('completed')
-        tlFigPurple.play()
-    }
+export const tlFigGreen = anime.timeline({
 })
 .add({
     delay: 200,
@@ -29,15 +24,7 @@ export const tl_figmaLogo = anime.timeline({
     duration: 100
 })
 
-// var tlFigGreen = anime.timeline({
-// })
-
-
-var tlFigPurple = anime.timeline({
-    autoplay: false,
-    begin: () => {
-        tlFigRed.play()
-    }
+export const tlFigPurple = anime.timeline({
 })
 .add({
     delay: 400,
@@ -64,12 +51,7 @@ var tlFigPurple = anime.timeline({
 
 })
 
-var tlFigRed = anime.timeline({
-    autoplay: false,
-    begin: () => {
-        tlFigOrange.play()
-    }
-
+export const tlFigRed = anime.timeline({
 })
 .add({
     delay: 600,
@@ -96,12 +78,7 @@ var tlFigRed = anime.timeline({
 
 })
 
-var tlFigOrange = anime.timeline({
-    autoplay: false,
-    begin: () => {
-        tlFigBlue.play()
-    }
-
+export const tlFigOrange = anime.timeline({
 })
 .add({
     delay: 800,
@@ -128,8 +105,7 @@ var tlFigOrange = anime.timeline({
 
 })
 
-var tlFigBlue = anime.timeline({
-    autoplay: false,
+export const tlFigBlue = anime.timeline({
 })
 .add({
     delay: 1000,
