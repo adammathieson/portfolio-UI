@@ -10,7 +10,7 @@
 #edge-1,
 #edge-2,
 #edge-3,
-#moment-logo,
+#momentLogo,
 #Postgre,
 #SQL,
 #KNEXJS,
@@ -26,12 +26,12 @@
     opacity: 0;
 }
 
-#react-logo,
-#redux-logo
+#reactLogo,
+#reduxLogo
 {
     scale: .75;
 }
-#react-logo, #postgres-logo {
+#reactLogo, #postgresLogo {
     svg {
         overflow: visible;
     }
@@ -43,7 +43,7 @@
 #second, #minute{
     transform-origin: 49% 32%;
 }
-#material-ui-logo
+#materialUiLogo
 {
     scale: .80;
 }

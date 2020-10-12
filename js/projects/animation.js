@@ -146,7 +146,7 @@ export function animations() {
         easing: 'linear'
     })
 
-    var tlPostgres = anime.timeline({
+    var tl_postgresLogo = anime.timeline({
     })
     .add({
         targets: '#postgres-elephant',
@@ -167,7 +167,7 @@ export function animations() {
         // duration: 1000,
     }, '-=650')
 
-    var tlGreenSock = anime.timeline({
+    var tl_greenSockLogo = anime.timeline({
     })
     .add({
         targets: '#hero-logo',
@@ -195,7 +195,7 @@ export function animations() {
         easing: 'linear'
     }, '-=300')
 
-    var tlKnex = anime.timeline({
+    var tl_KnexLogo = anime.timeline({
     })
     .add({
         targets: '#spokes',
@@ -218,7 +218,7 @@ export function animations() {
         duration: 300,
     }, '-=300')
 
-    var tlNode = anime.timeline({
+    var tl_nodejsLogo = anime.timeline({
     })
         .add ({
             targets: '#node-2,#node-3,#node-1,#node-4,#edge-2,#edge-3,#edge-1',
@@ -264,7 +264,7 @@ export function animations() {
             translateY: [5, 0],
         }, '-=1500')
 
-    var tlSvgLogo = anime.timeline({
+    var tl_svgLogo = anime.timeline({
     })
     .add({
         targets: '#svg-vector',
@@ -279,141 +279,6 @@ export function animations() {
         easing: 'linear',
         delay: anime.stagger(600),
     }, '-=3000')
-
-    var tlFigGreen = anime.timeline({
-    })
-    .add({
-        delay: 200,
-        targets: '#figma-green-sq',
-        translateX: [0, -98],
-        duration: 300,
-        easing: 'linear'
-    })
-    .add({
-        targets: '#figma-green-sq',
-        translateY: [0, -28],
-        duration: 300,
-        easing: 'linear'
-    })
-    .add({
-        targets: '#figma-green-sq',
-        opacity: [1,0],
-        duration: 100,
-    })
-    .add({
-        targets: '#figma-green',
-        opacity: [0,1],
-        duration: 100
-
-    })
-
-    var tlFigPurple = anime.timeline({
-    })
-    .add({
-        delay: 400,
-        targets: '#figma-purple-sq',
-        translateX: [0, -136],
-        duration: 300,
-        easing: 'linear'
-    })
-    .add({
-        targets: '#figma-purple-sq',
-        translateY: [0, -56],
-        duration: 300,
-        easing: 'linear'
-    })
-    .add({
-        targets: '#figma-purple-sq',
-        opacity: [1,0],
-        duration: 100,
-    })
-    .add({
-        targets: '#figma-purple',
-        opacity: [0,1],
-        duration: 100
-
-    })
-
-    var tlFigRed = anime.timeline({
-    })
-    .add({
-        delay: 600,
-        targets: '#figma-red-sq',
-        translateX: [0, -175],
-        duration: 300,
-        easing: 'linear'
-    })
-    .add({
-        targets: '#figma-red-sq',
-        translateY: [0, -80],
-        duration: 300,
-        easing: 'linear'
-    })
-    .add({
-        targets: '#figma-red-sq',
-        opacity: [1,0],
-        duration: 100,
-    })
-    .add({
-        targets: '#figma-red',
-        opacity: [0,1],
-        duration: 100
-
-    })
-
-    var tlFigOrange = anime.timeline({
-    })
-    .add({
-        delay: 800,
-        targets: '#figma-orange-sq',
-        translateX: [0, -182],
-        duration: 300,
-        easing: 'linear'
-    })
-    .add({
-        targets: '#figma-orange-sq',
-        translateY: [0, -80],
-        duration: 300,
-        easing: 'linear'
-    })
-    .add({
-        targets: '#figma-orange-sq',
-        opacity: [1,0],
-        duration: 100,
-    })
-    .add({
-        targets: '#figma-orange',
-        opacity: [0,1],
-        duration: 100
-
-    })
-
-    var tlFigBlue = anime.timeline({
-    })
-    .add({
-        delay: 1000,
-        targets: '#figma-blue-sq',
-        translateX: [0, -220],
-        duration: 300,
-        easing: 'linear'
-    })
-    .add({
-        targets: '#figma-blue-sq',
-        translateY: [0, -56],
-        duration: 300,
-        easing: 'linear'
-    })
-    .add({
-        targets: '#figma-blue-sq',
-        opacity: [1,0],
-        duration: 100,
-    })
-    .add({
-        targets: '#figma-blue',
-        opacity: [0,1],
-        duration: 100
-    })
-
 
 }
 

@@ -1,5 +1,10 @@
 import {projects} from './projects.js'
 import {animations} from './animation.js'
+import { tl_figmaLogo } from './animations/logoAnimations/index.js'
+
+
+const tls = [tl_figmaLogo]
+
     
 let current = 0 
 export const projectLoader = () => {
@@ -13,7 +18,14 @@ export const projectLoader = () => {
     description.textContent = project.description
 
     if (logos.length) {
-        logos.forEach(logo => logo.style.display = 'none')
+        logos.forEach(logo => {
+            logo.style.display = 'none'
+            // let tl = 'tl_' + `${logo.id}`
+            // console.log(tl)
+        })
+        tls.forEach(el => (el.reset(), el.play()))
+        console.log(tl_figmaLogo)
+
     }
 
     // let iconWidth = Math.floor((1 / project.icons.length) * 100)
