@@ -1,6 +1,13 @@
 import {projects} from './projects.js'
 import {animations} from './animation.js'
-import { figmaTls, tl_nodejsLogo, tl_svgLogo, tl_knexLogo, tl_greenSockLogo } from './animations/logoAnimations/index.js'
+import {
+    figmaTls,
+    tl_nodejsLogo,
+    tl_svgLogo,
+    tl_knexLogo,
+    tl_greenSockLogo,
+    tl_postgresLogo,
+} from './animations/logoAnimations/index.js'
 
 // timelines to reset
 const tls = [
@@ -8,7 +15,8 @@ const tls = [
     tl_nodejsLogo,
     tl_svgLogo,
     tl_knexLogo,
-    tl_greenSockLogo
+    tl_greenSockLogo,
+    tl_postgresLogo,
 ]
 
 let current = 0 

@@ -2,6 +2,7 @@ import { tl_nodejsLogo } from './tlNode.js'
 import { tl_svgLogo } from './tlSvg.js'
 import { tl_knexLogo } from './tlKnex.js'
 import { tl_greenSockLogo } from './tlGreenSock.js'
+import { tl_postgresLogo } from './tlPostgres.js'
 import { 
     tlFigGreen, 
     tlFigPurple,
@@ -23,5 +24,6 @@ export {
     tl_nodejsLogo,
     tl_svgLogo,
     tl_knexLogo,
-    tl_greenSockLogo
+    tl_greenSockLogo,
+    tl_postgresLogo,
 }
