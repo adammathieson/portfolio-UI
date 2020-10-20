@@ -234,6 +234,11 @@ button {
   opacity: 0;
 }
 
+.project-transition-container {
+  border: 1px solid red;
+  width: 100%;
+}
+
 .projects {
   background-color: #BCD3DB;
   height: 100vh;
