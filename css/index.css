@@ -74,7 +74,6 @@ body {
 
 section {
   display: flex;
-  margin: 0 0 20em 0;
   background-size: cover;
   -webkit-background-size: cover;
   background-repeat: no-repeat;
@@ -237,6 +236,7 @@ button {
 .project-transition-container {
   border: 1px solid red;
   width: 100%;
+  padding: 4em;
 }
 
 .projects {
